@@ -1,0 +1,23 @@
+arm-unknown-eabi-ld -static -nostartup-T rpiMicon.lds startup.o main.o rpi_lib/rpi_init.o rpi_lib/bss/clearbss.o rpi_lib/gpio/gpio.o rpi_lib/timer/timer.o rpi_lib/delay/delay.o rpi_lib/serial/serial.o -o rpi-micon.elf -L/home/jitomesky/cross/rpi/arm-unknown-eabi/lib/gcc/arm-unknown-eabi/4.8.1/ -L/home/jitomesky/cross/rpi/arm-unknown-eabi/arm-unknown-eabi/lib -lc -lgcc -lc
+
+/home/jitomesky/cross/rpi/arm-unknown-eabi/arm-unknown-eabi/lib/libc.a(lib_a-sbrkr.o): In function `_sbrk_r':
+sbrkr.c:(.text+0x18): undefined reference to `_sbrk'
+arm-unknown-eabi-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 and 3 information.
+/home/jitomesky/cross/rpi/arm-unknown-eabi/arm-unknown-eabi/lib/libc.a(lib_a-writer.o): In function `_write_r':
+writer.c:(.text+0x20): undefined reference to `_write'
+arm-unknown-eabi-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 and 3 information.
+/home/jitomesky/cross/rpi/arm-unknown-eabi/arm-unknown-eabi/lib/libc.a(lib_a-closer.o): In function `_close_r':
+closer.c:(.text+0x18): undefined reference to `_close'
+arm-unknown-eabi-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 and 3 information.
+/home/jitomesky/cross/rpi/arm-unknown-eabi/arm-unknown-eabi/lib/libc.a(lib_a-fstatr.o): In function `_fstat_r':
+fstatr.c:(.text+0x1c): undefined reference to `_fstat'
+arm-unknown-eabi-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 and 3 information.
+/home/jitomesky/cross/rpi/arm-unknown-eabi/arm-unknown-eabi/lib/libc.a(lib_a-isattyr.o): In function `_isatty_r':
+isattyr.c:(.text+0x18): undefined reference to `_isatty'
+arm-unknown-eabi-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 and 3 information.
+/home/jitomesky/cross/rpi/arm-unknown-eabi/arm-unknown-eabi/lib/libc.a(lib_a-lseekr.o): In function `_lseek_r':
+lseekr.c:(.text+0x20): undefined reference to `_lseek'
+arm-unknown-eabi-ld: Dwarf Error: found dwarf version '4', this reader only handles version 2 and 3 information.
+/home/jitomesky/cross/rpi/arm-unknown-eabi/arm-unknown-eabi/lib/libc.a(lib_a-readr.o): In function `_read_r':
+readr.c:(.text+0x20): undefined reference to `_read'
+make: *** [rpi-micon.elf] エラー 1
