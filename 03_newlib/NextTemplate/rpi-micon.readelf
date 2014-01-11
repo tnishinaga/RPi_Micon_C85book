@@ -22,7 +22,7 @@ ELF Header:
 Section Headers:
   [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
   [ 0]                   NULL            00000000 000000 000000 00      0   0  0
-  [ 1] .text             PROGBITS        00008000 000078 000a5c 00  AX  0   0  4
+  [ 1] .text             PROGBITS        00008000 000078 000a60 00  AX  0   0  4
   [ 2] .rodata           PROGBITS        00008a60 000ad8 0004d0 00  WA  0   0  8
   [ 3] .rodata.str1.1    PROGBITS        00008f30 000fa8 000002 01 AMS  0   0  1
   [ 4] .bss              NOBITS          00008f34 000faa 000004 00  WA  0   0  4
@@ -77,121 +77,121 @@ Symbol table '.symtab' contains 130 entries:
     12: 00000000     0 SECTION LOCAL  DEFAULT   12 
     13: 00008000     0 NOTYPE  LOCAL  DEFAULT    1 $a
     14: 00000000     0 FILE    LOCAL  DEFAULT  ABS main.c
-    15: 00008010     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    15: 00008014     0 NOTYPE  LOCAL  DEFAULT    1 $a
     16: 00000000     0 FILE    LOCAL  DEFAULT  ABS syscalls.c
-    17: 00008020     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    18: 000080b8     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    19: 000080c0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    17: 00008024     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    18: 000080bc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    19: 000080c4     0 NOTYPE  LOCAL  DEFAULT    1 $a
     20: 00008a60     0 NOTYPE  LOCAL  DEFAULT    2 $d
     21: 00000000     0 FILE    LOCAL  DEFAULT  ABS rpi_init.c
-    22: 0000816c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    23: 000081a0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    22: 00008170     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    23: 000081a4     0 NOTYPE  LOCAL  DEFAULT    1 $d
     24: 00000000     0 FILE    LOCAL  DEFAULT  ABS gpio.c
-    25: 000081a4    84 FUNC    LOCAL  DEFAULT    1 setPullUpDown.part.0
-    26: 000081a4     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    27: 000081f4     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    28: 000081f8     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    29: 0000825c     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    30: 00008260     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    31: 00008290     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    32: 00008294     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    33: 000082c4     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    34: 000082ec     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    35: 000084cc     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    36: 000084e8     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    37: 0000855c     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    38: 0000856c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    39: 000085bc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    25: 000081a8    84 FUNC    LOCAL  DEFAULT    1 setPullUpDown.part.0
+    26: 000081a8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    27: 000081f8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    28: 000081fc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    29: 00008260     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    30: 00008264     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    31: 00008294     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    32: 00008298     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    33: 000082c8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    34: 000082f0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    35: 000084d0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    36: 000084ec     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    37: 00008560     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    38: 00008570     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    39: 000085c0     0 NOTYPE  LOCAL  DEFAULT    1 $d
     40: 00000000     0 FILE    LOCAL  DEFAULT  ABS timer.c
-    41: 000085c0     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    42: 000085d4     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    43: 000085d8     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    44: 00008614     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    41: 000085c4     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    42: 000085d8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    43: 000085dc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    44: 00008618     0 NOTYPE  LOCAL  DEFAULT    1 $d
     45: 00000000     0 FILE    LOCAL  DEFAULT  ABS delay.c
-    46: 00008618     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    46: 0000861c     0 NOTYPE  LOCAL  DEFAULT    1 $a
     47: 00000000     0 FILE    LOCAL  DEFAULT  ABS serial.c
-    48: 00008670     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    49: 000086b8     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    50: 000086bc     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    51: 000087c4     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    52: 000087d0     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    53: 000087e0     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    54: 000087e4     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    55: 000087fc     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    56: 00008800     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    57: 00008880     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    58: 00008888     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    59: 0000890c     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    60: 00008914     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    48: 00008674     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    49: 000086bc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    50: 000086c0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    51: 000087c8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    52: 000087d4     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    53: 000087e4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    54: 000087e8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    55: 00008800     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    56: 00008804     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    57: 00008884     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    58: 0000888c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    59: 00008910     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    60: 00008918     0 NOTYPE  LOCAL  DEFAULT    1 $a
     61: 00008ea8     0 NOTYPE  LOCAL  DEFAULT    2 $d
     62: 00008a68     0 NOTYPE  LOCAL  DEFAULT    2 $d
     63: 00000000     0 FILE    LOCAL  DEFAULT  ABS clearbss.c
-    64: 00008a0c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    65: 00008a44     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    64: 00008a10     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    65: 00008a48     0 NOTYPE  LOCAL  DEFAULT    1 $d
     66: 00000000     0 FILE    LOCAL  DEFAULT  ABS errno.c
-    67: 00008a4c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    68: 00008a58     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    67: 00008a50     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    68: 00008a5c     0 NOTYPE  LOCAL  DEFAULT    1 $d
     69: 00000000     0 FILE    LOCAL  DEFAULT  ABS impure.c
     70: 00008f2c     0 NOTYPE  LOCAL  DEFAULT    2 $d
     71: 00008a80  1064 OBJECT  LOCAL  DEFAULT    2 impure_data
     72: 00008a78     0 NOTYPE  LOCAL  DEFAULT    2 $d
     73: 0000087a     0 NOTYPE  LOCAL  DEFAULT    8 $d
-    74: 00008084     8 FUNC    GLOBAL DEFAULT    1 _getpid
+    74: 00008088     8 FUNC    GLOBAL DEFAULT    1 _getpid
     75: 00008f34     4 OBJECT  GLOBAL DEFAULT    4 prev_heap_end
-    76: 00008020     4 FUNC    GLOBAL DEFAULT    1 initialise_monitor_handle
-    77: 00008a4c    16 FUNC    GLOBAL DEFAULT    1 __errno
-    78: 000087e4    28 FUNC    GLOBAL DEFAULT    1 Serial_available
-    79: 00008a0c    64 FUNC    GLOBAL DEFAULT    1 clearBss
-    80: 0000856c    84 FUNC    GLOBAL DEFAULT    1 digitalRead
+    76: 00008024     4 FUNC    GLOBAL DEFAULT    1 initialise_monitor_handle
+    77: 00008a50    16 FUNC    GLOBAL DEFAULT    1 __errno
+    78: 000087e8    28 FUNC    GLOBAL DEFAULT    1 Serial_available
+    79: 00008a10    64 FUNC    GLOBAL DEFAULT    1 clearBss
+    80: 00008570    84 FUNC    GLOBAL DEFAULT    1 digitalRead
     81: 00008a70     8 OBJECT  GLOBAL DEFAULT    2 write_to
-    82: 000085d8    64 FUNC    GLOBAL DEFAULT    1 get_systime
+    82: 000085dc    64 FUNC    GLOBAL DEFAULT    1 get_systime
     83: 00009000     0 NOTYPE  GLOBAL DEFAULT  ABS __free_start
     84: 00008f34     0 NOTYPE  GLOBAL DEFAULT  ABS __rodata_end
-    85: 000080c0     8 FUNC    GLOBAL DEFAULT    1 _fstat
-    86: 000084e8   132 FUNC    GLOBAL DEFAULT    1 digitalWrite
-    87: 00008294   596 FUNC    GLOBAL DEFAULT    1 pinMode
-    88: 0000812c     8 FUNC    GLOBAL DEFAULT    1 _isatty
+    85: 000080c4     8 FUNC    GLOBAL DEFAULT    1 _fstat
+    86: 000084ec   132 FUNC    GLOBAL DEFAULT    1 digitalWrite
+    87: 00008298   596 FUNC    GLOBAL DEFAULT    1 pinMode
+    88: 00008130     8 FUNC    GLOBAL DEFAULT    1 _isatty
     89: 00008f2c     4 OBJECT  GLOBAL DEFAULT    2 _global_impure_ptr
     90: 00008f38     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_end
-    91: 00008060    16 FUNC    GLOBAL DEFAULT    1 _open
-    92: 0000808c    52 FUNC    GLOBAL DEFAULT    1 _sbrk
-    93: 000080e0     4 FUNC    GLOBAL DEFAULT    1 _raise
-    94: 000086bc   276 FUNC    GLOBAL DEFAULT    1 Serial_begin
-    95: 0000810c    32 FUNC    GLOBAL DEFAULT    1 _times
-    96: 000080c8     8 FUNC    GLOBAL DEFAULT    1 _stat
-    97: 000089bc    80 FUNC    GLOBAL DEFAULT    1 uart0_gets
+    91: 00008064    16 FUNC    GLOBAL DEFAULT    1 _open
+    92: 00008090    52 FUNC    GLOBAL DEFAULT    1 _sbrk
+    93: 000080e4     4 FUNC    GLOBAL DEFAULT    1 _raise
+    94: 000086c0   276 FUNC    GLOBAL DEFAULT    1 Serial_begin
+    95: 00008110    32 FUNC    GLOBAL DEFAULT    1 _times
+    96: 000080cc     8 FUNC    GLOBAL DEFAULT    1 _stat
+    97: 000089c0    80 FUNC    GLOBAL DEFAULT    1 uart0_gets
     98: 00008000     0 NOTYPE  GLOBAL DEFAULT    1 _start
-    99: 0000802c     8 FUNC    GLOBAL DEFAULT    1 _lseek
-   100: 00008a5c     0 NOTYPE  GLOBAL DEFAULT  ABS __rodata_start
+    99: 00008030     8 FUNC    GLOBAL DEFAULT    1 _lseek
+   100: 00008a60     0 NOTYPE  GLOBAL DEFAULT  ABS __rodata_start
    101: 00008f34     0 NOTYPE  GLOBAL DEFAULT  ABS __data_end
-   102: 0000816c    56 FUNC    GLOBAL DEFAULT    1 rpi_init
-   103: 00008950   108 FUNC    GLOBAL DEFAULT    1 uart0_puts
-   104: 000087d0    20 FUNC    GLOBAL DEFAULT    1 Serial_end
+   102: 00008170    56 FUNC    GLOBAL DEFAULT    1 rpi_init
+   103: 00008954   108 FUNC    GLOBAL DEFAULT    1 uart0_puts
+   104: 000087d4    20 FUNC    GLOBAL DEFAULT    1 Serial_end
    105: 00008f34     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
-   106: 00008010    16 FUNC    GLOBAL DEFAULT    1 main
-   107: 000080d0     8 FUNC    GLOBAL DEFAULT    1 _link
-   108: 00008154    24 FUNC    GLOBAL DEFAULT    1 _rename
+   106: 00008014    16 FUNC    GLOBAL DEFAULT    1 main
+   107: 000080d4     8 FUNC    GLOBAL DEFAULT    1 _link
+   108: 00008158    24 FUNC    GLOBAL DEFAULT    1 _rename
    109: 00008a60     4 OBJECT  GLOBAL DEFAULT    2 heap_end
-   110: 00008640    48 FUNC    GLOBAL DEFAULT    1 delay
+   110: 00008644    48 FUNC    GLOBAL DEFAULT    1 delay
    111: 00008a78     4 OBJECT  GLOBAL DEFAULT    2 _impure_ptr
-   112: 00008914    60 FUNC    GLOBAL DEFAULT    1 Serial_write
-   113: 000080d8     8 FUNC    GLOBAL DEFAULT    1 _unlink
-   114: 00008670    76 FUNC    GLOBAL DEFAULT    1 setSerialTimeout
-   115: 00008034    44 FUNC    GLOBAL DEFAULT    1 _write
-   116: 00008260    52 FUNC    GLOBAL DEFAULT    1 setPullUpDown
-   117: 0000807c     8 FUNC    GLOBAL DEFAULT    1 _kill
-   118: 000080e4    40 FUNC    GLOBAL DEFAULT    1 _gettimeofday
-   119: 00008024     8 FUNC    GLOBAL DEFAULT    1 _read
-   120: 00008078     4 FUNC    GLOBAL DEFAULT    1 _exit
-   121: 000081f8   104 FUNC    GLOBAL DEFAULT    1 init_gpio
-   122: 00008800   136 FUNC    GLOBAL DEFAULT    1 uart0_getc
+   112: 00008918    60 FUNC    GLOBAL DEFAULT    1 Serial_write
+   113: 000080dc     8 FUNC    GLOBAL DEFAULT    1 _unlink
+   114: 00008674    76 FUNC    GLOBAL DEFAULT    1 setSerialTimeout
+   115: 00008038    44 FUNC    GLOBAL DEFAULT    1 _write
+   116: 00008264    52 FUNC    GLOBAL DEFAULT    1 setPullUpDown
+   117: 00008080     8 FUNC    GLOBAL DEFAULT    1 _kill
+   118: 000080e8    40 FUNC    GLOBAL DEFAULT    1 _gettimeofday
+   119: 00008028     8 FUNC    GLOBAL DEFAULT    1 _read
+   120: 0000807c     4 FUNC    GLOBAL DEFAULT    1 _exit
+   121: 000081fc   104 FUNC    GLOBAL DEFAULT    1 init_gpio
+   122: 00008804   136 FUNC    GLOBAL DEFAULT    1 uart0_getc
    123: 00008f34     0 NOTYPE  GLOBAL DEFAULT  ABS __data_start
-   124: 00008888   140 FUNC    GLOBAL DEFAULT    1 uart0_putc
-   125: 000085c0    24 FUNC    GLOBAL DEFAULT    1 init_syst
-   126: 00008134    32 FUNC    GLOBAL DEFAULT    1 _system
+   124: 0000888c   140 FUNC    GLOBAL DEFAULT    1 uart0_putc
+   125: 000085c4    24 FUNC    GLOBAL DEFAULT    1 init_syst
+   126: 00008138    32 FUNC    GLOBAL DEFAULT    1 _system
    127: 00008a68     8 OBJECT  GLOBAL DEFAULT    2 read_to
-   128: 00008618    40 FUNC    GLOBAL DEFAULT    1 delayMicroseconds
-   129: 00008070     8 FUNC    GLOBAL DEFAULT    1 _close
+   128: 0000861c    40 FUNC    GLOBAL DEFAULT    1 delayMicroseconds
+   129: 00008074     8 FUNC    GLOBAL DEFAULT    1 _close
 
 No version information found in this file.
 Attribute Section: aeabi

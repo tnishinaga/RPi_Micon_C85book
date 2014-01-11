@@ -10,7 +10,7 @@ ELF Header:
   Version:                           0x1
   Entry point address:               0x8000
   Start of program headers:          52 (bytes into file)
-  Start of section headers:          33176 (bytes into file)
+  Start of section headers:          33180 (bytes into file)
   Flags:                             0x5000002, has entry point, Version5 EABI
   Size of this header:               52 (bytes)
   Size of program headers:           32 (bytes)
@@ -22,14 +22,14 @@ ELF Header:
 Section Headers:
   [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
   [ 0]                   NULL            00000000 000000 000000 00      0   0  0
-  [ 1] .text             PROGBITS        00008000 008000 0000b0 00  AX  0   0  4
-  [ 2] .rodata           PROGBITS        000080b0 0080b0 000010 00  WA  0   0  4
-  [ 3] .bss              NOBITS          000080c0 0080c0 000004 00  WA  0   0  4
-  [ 4] .ARM.attributes   ARM_ATTRIBUTES  00000000 0080c0 00002b 00      0   0  1
-  [ 5] .comment          PROGBITS        00000000 0080eb 000066 00      0   0  1
-  [ 6] .shstrtab         STRTAB          00000000 008151 000047 00      0   0  1
-  [ 7] .symtab           SYMTAB          00000000 008300 0001c0 10      8  16  4
-  [ 8] .strtab           STRTAB          00000000 0084c0 00009b 00      0   0  1
+  [ 1] .text             PROGBITS        00008000 008000 0000b4 00  AX  0   0  4
+  [ 2] .rodata           PROGBITS        000080b4 0080b4 000010 00  WA  0   0  4
+  [ 3] .bss              NOBITS          000080c4 0080c4 000004 00  WA  0   0  4
+  [ 4] .ARM.attributes   ARM_ATTRIBUTES  00000000 0080c4 00002b 00      0   0  1
+  [ 5] .comment          PROGBITS        00000000 0080ef 000066 00      0   0  1
+  [ 6] .shstrtab         STRTAB          00000000 008155 000047 00      0   0  1
+  [ 7] .symtab           SYMTAB          00000000 008304 0001c0 10      8  16  4
+  [ 8] .strtab           STRTAB          00000000 0084c4 00009b 00      0   0  1
 Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings)
   I (info), L (link order), G (group), x (unknown)
@@ -39,7 +39,7 @@ There are no section groups in this file.
 
 Program Headers:
   Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
-  LOAD           0x008000 0x00008000 0x00008000 0x000c0 0x000c4 RWE 0x8000
+  LOAD           0x008000 0x00008000 0x00008000 0x000c4 0x000c8 RWE 0x8000
   PAX_FLAGS      0x000000 0x00000000 0x00000000 0x00000 0x00000     0x4
 
  Section to Segment mapping:
@@ -57,32 +57,32 @@ Symbol table '.symtab' contains 28 entries:
    Num:    Value  Size Type    Bind   Vis      Ndx Name
      0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
      1: 00008000     0 SECTION LOCAL  DEFAULT    1 
-     2: 000080b0     0 SECTION LOCAL  DEFAULT    2 
-     3: 000080c0     0 SECTION LOCAL  DEFAULT    3 
+     2: 000080b4     0 SECTION LOCAL  DEFAULT    2 
+     3: 000080c4     0 SECTION LOCAL  DEFAULT    3 
      4: 00000000     0 SECTION LOCAL  DEFAULT    4 
      5: 00000000     0 SECTION LOCAL  DEFAULT    5 
      6: 00008000     0 NOTYPE  LOCAL  DEFAULT    1 $a
      7: 00000000     0 FILE    LOCAL  DEFAULT  ABS main.c
-     8: 000080b0     0 NOTYPE  LOCAL  DEFAULT    2 $d
-     9: 00008010     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    10: 00008038     0 NOTYPE  LOCAL  DEFAULT    1 $d
+     8: 000080b4     0 NOTYPE  LOCAL  DEFAULT    2 $d
+     9: 00008014     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    10: 0000803c     0 NOTYPE  LOCAL  DEFAULT    1 $d
     11: 00000000     0 FILE    LOCAL  DEFAULT  ABS rpi_init.c
-    12: 0000803c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    12: 00008040     0 NOTYPE  LOCAL  DEFAULT    1 $a
     13: 00000000     0 FILE    LOCAL  DEFAULT  ABS clearbss.c
-    14: 0000804c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    15: 000080a8     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    16: 0000804c   100 FUNC    GLOBAL DEFAULT    1 clearBss
-    17: 000080c0     0 NOTYPE  GLOBAL DEFAULT  ABS __rodata_end
-    18: 000080c4     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_end
+    14: 00008050     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    15: 000080ac     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    16: 00008050   100 FUNC    GLOBAL DEFAULT    1 clearBss
+    17: 000080c4     0 NOTYPE  GLOBAL DEFAULT  ABS __rodata_end
+    18: 000080c8     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_end
     19: 00008000     0 NOTYPE  GLOBAL DEFAULT    1 _start
-    20: 000080b0     0 NOTYPE  GLOBAL DEFAULT  ABS __rodata_start
-    21: 000080c0     0 NOTYPE  GLOBAL DEFAULT  ABS __data_end
-    22: 0000803c    16 FUNC    GLOBAL DEFAULT    1 rpi_init
-    23: 000080c0     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
-    24: 00008010    44 FUNC    GLOBAL DEFAULT    1 main
-    25: 000080b0     4 OBJECT  GLOBAL DEFAULT    2 dataVal
-    26: 000080c0     0 NOTYPE  GLOBAL DEFAULT  ABS __data_start
-    27: 000080c0     4 OBJECT  GLOBAL DEFAULT    3 bssVal
+    20: 000080b4     0 NOTYPE  GLOBAL DEFAULT  ABS __rodata_start
+    21: 000080c4     0 NOTYPE  GLOBAL DEFAULT  ABS __data_end
+    22: 00008040    16 FUNC    GLOBAL DEFAULT    1 rpi_init
+    23: 000080c4     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+    24: 00008014    44 FUNC    GLOBAL DEFAULT    1 main
+    25: 000080b4     4 OBJECT  GLOBAL DEFAULT    2 dataVal
+    26: 000080c4     0 NOTYPE  GLOBAL DEFAULT  ABS __data_start
+    27: 000080c4     4 OBJECT  GLOBAL DEFAULT    3 bssVal
 
 No version information found in this file.
 Attribute Section: aeabi

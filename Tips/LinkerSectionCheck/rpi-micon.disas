@@ -8,66 +8,67 @@ Disassembly of section .text:
     8000:	e3a000d3 	mov	r0, #211	; 0xd3
     8004:	e129f000 	msr	CPSR_fc, r0
     8008:	e3a0d519 	mov	sp, #104857600	; 0x6400000
-    800c:	ebffffff 	bl	8010 <main>
+    800c:	eb000000 	bl	8014 <main>
+    8010:	eafffffe 	b	8010 <_start+0x10>
 
-00008010 <main>:
-    8010:	e92d4800 	push	{fp, lr}
-    8014:	e28db004 	add	fp, sp, #4	; 0x4
-    8018:	e24dd008 	sub	sp, sp, #8	; 0x8
-    801c:	e59f3014 	ldr	r3, [pc, #20]	; 8038 <main+0x28>
-    8020:	e50b3008 	str	r3, [fp, #-8]
-    8024:	eb000004 	bl	803c <rpi_init>
-    8028:	e3a03000 	mov	r3, #0	; 0x0
-    802c:	e1a00003 	mov	r0, r3
-    8030:	e24bd004 	sub	sp, fp, #4	; 0x4
-    8034:	e8bd8800 	pop	{fp, pc}
-    8038:	000080b4 	.word	0x000080b4
+00008014 <main>:
+    8014:	e92d4800 	push	{fp, lr}
+    8018:	e28db004 	add	fp, sp, #4	; 0x4
+    801c:	e24dd008 	sub	sp, sp, #8	; 0x8
+    8020:	e59f3014 	ldr	r3, [pc, #20]	; 803c <main+0x28>
+    8024:	e50b3008 	str	r3, [fp, #-8]
+    8028:	eb000004 	bl	8040 <rpi_init>
+    802c:	e3a03000 	mov	r3, #0	; 0x0
+    8030:	e1a00003 	mov	r0, r3
+    8034:	e24bd004 	sub	sp, fp, #4	; 0x4
+    8038:	e8bd8800 	pop	{fp, pc}
+    803c:	000080b8 	.word	0x000080b8
 
-0000803c <rpi_init>:
-    803c:	e92d4800 	push	{fp, lr}
-    8040:	e28db004 	add	fp, sp, #4	; 0x4
-    8044:	eb000000 	bl	804c <clearBss>
-    8048:	e8bd8800 	pop	{fp, pc}
+00008040 <rpi_init>:
+    8040:	e92d4800 	push	{fp, lr}
+    8044:	e28db004 	add	fp, sp, #4	; 0x4
+    8048:	eb000000 	bl	8050 <clearBss>
+    804c:	e8bd8800 	pop	{fp, pc}
 
-0000804c <clearBss>:
-    804c:	e52db004 	push	{fp}		; (str fp, [sp, #-4]!)
-    8050:	e28db000 	add	fp, sp, #0	; 0x0
-    8054:	e24dd014 	sub	sp, sp, #20	; 0x14
-    8058:	e59f3048 	ldr	r3, [pc, #72]	; 80a8 <clearBss+0x5c>
-    805c:	e50b300c 	str	r3, [fp, #-12]
-    8060:	e59f3044 	ldr	r3, [pc, #68]	; 80ac <clearBss+0x60>
-    8064:	e50b3010 	str	r3, [fp, #-16]
-    8068:	e51b300c 	ldr	r3, [fp, #-12]
-    806c:	e50b3008 	str	r3, [fp, #-8]
-    8070:	ea000005 	b	808c <clearBss+0x40>
-    8074:	e51b3008 	ldr	r3, [fp, #-8]
-    8078:	e3a02000 	mov	r2, #0	; 0x0
-    807c:	e5832000 	str	r2, [r3]
-    8080:	e51b3008 	ldr	r3, [fp, #-8]
-    8084:	e2833004 	add	r3, r3, #4	; 0x4
-    8088:	e50b3008 	str	r3, [fp, #-8]
-    808c:	e51b2008 	ldr	r2, [fp, #-8]
-    8090:	e51b3010 	ldr	r3, [fp, #-16]
-    8094:	e1520003 	cmp	r2, r3
-    8098:	3afffff5 	bcc	8074 <clearBss+0x28>
-    809c:	e24bd000 	sub	sp, fp, #0	; 0x0
-    80a0:	e49db004 	pop	{fp}		; (ldr fp, [sp], #4)
-    80a4:	e12fff1e 	bx	lr
-    80a8:	000080c0 	.word	0x000080c0
+00008050 <clearBss>:
+    8050:	e52db004 	push	{fp}		; (str fp, [sp, #-4]!)
+    8054:	e28db000 	add	fp, sp, #0	; 0x0
+    8058:	e24dd014 	sub	sp, sp, #20	; 0x14
+    805c:	e59f3048 	ldr	r3, [pc, #72]	; 80ac <clearBss+0x5c>
+    8060:	e50b300c 	str	r3, [fp, #-12]
+    8064:	e59f3044 	ldr	r3, [pc, #68]	; 80b0 <clearBss+0x60>
+    8068:	e50b3010 	str	r3, [fp, #-16]
+    806c:	e51b300c 	ldr	r3, [fp, #-12]
+    8070:	e50b3008 	str	r3, [fp, #-8]
+    8074:	ea000005 	b	8090 <clearBss+0x40>
+    8078:	e51b3008 	ldr	r3, [fp, #-8]
+    807c:	e3a02000 	mov	r2, #0	; 0x0
+    8080:	e5832000 	str	r2, [r3]
+    8084:	e51b3008 	ldr	r3, [fp, #-8]
+    8088:	e2833004 	add	r3, r3, #4	; 0x4
+    808c:	e50b3008 	str	r3, [fp, #-8]
+    8090:	e51b2008 	ldr	r2, [fp, #-8]
+    8094:	e51b3010 	ldr	r3, [fp, #-16]
+    8098:	e1520003 	cmp	r2, r3
+    809c:	3afffff5 	bcc	8078 <clearBss+0x28>
+    80a0:	e24bd000 	sub	sp, fp, #0	; 0x0
+    80a4:	e49db004 	pop	{fp}		; (ldr fp, [sp], #4)
+    80a8:	e12fff1e 	bx	lr
     80ac:	000080c4 	.word	0x000080c4
+    80b0:	000080c8 	.word	0x000080c8
 
 Disassembly of section .rodata:
 
-000080b0 <dataVal>:
-    80b0:	00000001 	.word	0x00000001
-    80b4:	65766f4c 	.word	0x65766f4c
-    80b8:	6576694c 	.word	0x6576694c
-    80bc:	00000021 	.word	0x00000021
+000080b4 <dataVal>:
+    80b4:	00000001 	.word	0x00000001
+    80b8:	65766f4c 	.word	0x65766f4c
+    80bc:	6576694c 	.word	0x6576694c
+    80c0:	00000021 	.word	0x00000021
 
 Disassembly of section .bss:
 
-000080c0 <bssVal>:
-    80c0:	00000000 	.word	0x00000000
+000080c4 <bssVal>:
+    80c4:	00000000 	.word	0x00000000
 
 Disassembly of section .ARM.attributes:
 
@@ -76,12 +77,12 @@ Disassembly of section .ARM.attributes:
    4:	61656100 	cmnvs	r5, r0, lsl #2
    8:	01006962 	tsteq	r0, r2, ror #18
    c:	00000020 	andeq	r0, r0, r0, lsr #32
-  10:	4b5a3605 	blmi	168d82c <__bss_end+0x1685768>
+  10:	4b5a3605 	blmi	168d82c <__bss_end+0x1685764>
   14:	08090600 	stmdaeq	r9, {r9, sl}
   18:	14041201 	strne	r1, [r4], #-513
   1c:	17011501 	strne	r1, [r1, -r1, lsl #10]
   20:	19011803 	stmdbne	r1, {r0, r1, fp, ip}
-  24:	1b011a01 	blne	46830 <__bss_end+0x3e76c>
+  24:	1b011a01 	blne	46830 <__bss_end+0x3e768>
   28:	Address 0x0000000000000028 is out of bounds.
 
 

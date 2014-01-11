@@ -3,7 +3,7 @@
 	.align
 _start:
 	// IRQモードのスタックポインタ設定
-	// RQ,FIQ disable, Thumb disable, IRQ mode
+	// IRQ,FIQ disable, Thumb disable, IRQ mode
 	ldr	r0, =0x000000d2
 	msr	cpsr, r0
 	ldr	sp, =0x00008000
