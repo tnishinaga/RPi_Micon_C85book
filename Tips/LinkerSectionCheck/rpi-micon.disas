@@ -61,8 +61,8 @@ Disassembly of section .rodata:
 
 000080b4 <dataVal>:
     80b4:	00000001 	.word	0x00000001
-    80b8:	65766f4c 	.word	0x65766f4c
-    80bc:	6576694c 	.word	0x6576694c
+    80b8:	65676f48 	.word	0x65676f48
+    80bc:	65676f48 	.word	0x65676f48
     80c0:	00000021 	.word	0x00000021
 
 Disassembly of section .bss:

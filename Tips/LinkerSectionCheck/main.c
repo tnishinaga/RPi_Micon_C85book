@@ -4,7 +4,7 @@ volatile int dataVal = 1;
 volatile int bssVal;
 
 int main(void){
-	volatile char *rodataVal = "LoveLive!";
+	volatile char *rodataVal = "HogeHoge!";
 
 	rpi_init();
 
