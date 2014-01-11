@@ -92,7 +92,7 @@ int main(void){
 	*TIMER_CONTROL &= 0xffffff00;
 
 	// timer clock を1MHzに設定
-	//（0xF9=249: timer clock=250Mhz/(249+1)）
+	//（0xF9=249: timer clock=250MHz/(249+1)）
 	*TIMER_PREDIVIDER = 0x000000F9;
 
 	// タイマー値設定(4sec)

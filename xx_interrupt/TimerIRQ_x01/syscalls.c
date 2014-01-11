@@ -42,6 +42,9 @@ int     _lseek      _PARAMS ((int, int, int));
 int     _read       _PARAMS ((int, char *, int));
 void    initialise_monitor_handles _PARAMS ((void));
 
+/* Register name faking - works in collusion with the linker.  */
+register char * stack_ptr asm ("sp");
+
 //static int
 //remap_handle (int fh)
 //{
@@ -133,12 +136,12 @@ _getpid (int n)
 }
 
 
-caddr_t
-_sbrk (int incr)
-{
-    prev_heap_end = heap_end;
-    heap_end += incr;
-    return (caddr_t) prev_heap_end;
+caddr_t _sbrk (int incr) {
+  prev_heap_end = heap_end;
+  if (heap_end + incr > stack_ptr)
+    return (caddr_t) -1;
+  heap_end += incr;
+  return (caddr_t) prev_heap_end;
 }
 
 int

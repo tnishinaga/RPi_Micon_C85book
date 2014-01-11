@@ -3,11 +3,13 @@
 	.align
 _start:
 	// IRQモードのスタックポインタ設定
-	ldr	r0, =0x000000d2	@IRQ,FIQ disable, Thumb disable, IRQ mode
+	// RQ,FIQ disable, Thumb disable, IRQ mode
+	ldr	r0, =0x000000d2
 	msr	cpsr, r0
 	ldr	sp, =0x00008000
 
 	// SVCモードのスタックポインタ設定
+	// IRQ,FIQ disable, Thumb disable, SVC mode 
 	ldr	r0, =0x000000d3
 	msr	cpsr, r0
 	ldr	sp, =0x06400000
@@ -20,7 +22,8 @@ _start:
 
 .global _hangup
 _hangup:
-	ldr	r0, =0x000000d3	@IRQ,FIQ disable, Thumb disable, SVC mode 
+	// IRQ,FIQ disable, Thumb disable, SVC mode 
+	ldr	r0, =0x000000d3
 	msr	cpsr, r0
 	b .
 
