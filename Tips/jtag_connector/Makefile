@@ -3,6 +3,9 @@ CROSS= arm-unknown-eabi-
 CC= $(CROSS)gcc
 LD= $(CROSS)ld
 OBJCOPY= $(CROSS)objcopy
+OBJDUMP= $(CROSS)objdump
+SIZE= $(CROSS)size
+READELF= $(CROSS)readelf
 
 STARTUP= startup.o
 OBJS= main.o
@@ -19,6 +22,9 @@ all:	rpi-micon.img
 
 rpi-micon.elf:	$(STARTUP) $(OBJS)
 	$(LD) -static -nostdlib -T rpiMicon.lds $^ `$(CC) -print-libgcc-file-name` -o $@
+	$(OBJDUMP) -D rpi-micon.elf > rpi-micon.disas
+	$(SIZE) rpi-micon.elf > rpi-micon.size
+	$(READELF) -a rpi-micon.elf > rpi-micon.readelf
 
 .SUFFIXES: .elf .img
 
