@@ -25,7 +25,7 @@ OBJS+= rpi_lib/bss/clearbss.o
 # interrupt
 OBJS += rpi_lib/interrupt.o
 
-CFLAGS= -mfloat-abi=hard -mlittle-endian
+CFLAGS= -mfloat-abi=soft -mlittle-endian
 CFLAGS+= -nostartfiles
 CFLAGS+= -ffreestanding
 CFLAGS+= -O2 

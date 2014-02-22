@@ -1,7 +1,7 @@
 #
 # Automatically generated make config: don't edit
 # crosstool-NG 1.19.0 Configuration
-# Sat Oct 26 01:48:48 2013
+# Sat Feb 22 16:42:38 2014
 #
 CT_CONFIGURE_has_xz=y
 CT_CONFIGURE_has_svn=y
@@ -102,7 +102,7 @@ CT_ARCH_SUPPORTS_SOFTFP=y
 CT_ARCH_DEFAULT_HAS_MMU=y
 CT_ARCH_DEFAULT_LE=y
 CT_ARCH_DEFAULT_32=y
-CT_ARCH_ARCH="armv6zk"
+CT_ARCH_ARCH=""
 CT_ARCH_CPU="arm1176jzf-s"
 CT_ARCH_TUNE="arm1176jzf-s"
 CT_ARCH_FPU="vfp"
@@ -110,8 +110,8 @@ CT_ARCH_FPU="vfp"
 CT_ARCH_LE=y
 CT_ARCH_32=y
 CT_ARCH_BITNESS=32
-CT_ARCH_FLOAT_HW=y
-# CT_ARCH_FLOAT_SW is not set
+# CT_ARCH_FLOAT_HW is not set
+CT_ARCH_FLOAT_SW=y
 CT_TARGET_CFLAGS=""
 CT_TARGET_LDFLAGS=""
 # CT_ARCH_alpha is not set
@@ -150,7 +150,7 @@ CT_ARCH_ENDIAN="little"
 # Target optimisations
 #
 # CT_ARCH_FLOAT_SOFTFP is not set
-CT_ARCH_FLOAT="hard"
+CT_ARCH_FLOAT="soft"
 
 #
 # arm other options
@@ -231,21 +231,30 @@ CT_BINUTILS_binutils=y
 #
 # GNU binutils
 #
-# CT_BINUTILS_V_2_22 is not set
+CT_BINUTILS_V_2_22=y
 # CT_BINUTILS_V_2_21_53 is not set
 # CT_BINUTILS_V_2_21_1a is not set
 # CT_BINUTILS_V_2_20_1a is not set
-CT_BINUTILS_V_2_19_1a=y
+# CT_BINUTILS_V_2_19_1a is not set
 # CT_BINUTILS_V_2_18a is not set
-CT_BINUTILS_VERSION="2.19.1a"
+CT_BINUTILS_VERSION="2.22"
+CT_BINUTILS_2_22_or_later=y
+CT_BINUTILS_2_21_or_later=y
+CT_BINUTILS_2_20_or_later=y
 CT_BINUTILS_2_19_or_later=y
 CT_BINUTILS_2_18_or_later=y
 CT_BINUTILS_HAS_HASH_STYLE=y
+CT_BINUTILS_HAS_GOLD=y
 CT_BINUTILS_GOLD_SUPPORTS_ARCH=y
+CT_BINUTILS_HAS_PLUGINS=y
 CT_BINUTILS_HAS_PKGVERSION_BUGURL=y
 CT_BINUTILS_LINKER_LD=y
+# CT_BINUTILS_LINKER_GOLD is not set
+# CT_BINUTILS_LINKER_LD_GOLD is not set
+# CT_BINUTILS_LINKER_GOLD_LD is not set
 CT_BINUTILS_LINKERS_LIST="ld"
 CT_BINUTILS_LINKER_DEFAULT="bfd"
+# CT_BINUTILS_PLUGINS is not set
 CT_BINUTILS_EXTRA_CONFIG_ARRAY=""
 
 #
@@ -388,7 +397,8 @@ CT_THREADS_NONE=y
 #
 # CT_LIBC_NEWLIB_IO_C99FMT is not set
 # CT_LIBC_NEWLIB_IO_LL is not set
-# CT_LIBC_NEWLIB_IO_FLOAT is not set
+CT_LIBC_NEWLIB_IO_FLOAT=y
+# CT_LIBC_NEWLIB_IO_LDBL is not set
 CT_LIBC_NEWLIB_DISABLE_SUPPLIED_SYSCALLS=y
 CT_LIBC_NEWLIB_ENABLE_TARGET_OPTSPACE=y
 CT_LIBC_NEWLIB_EXTRA_CONFIG_ARRAY=""
@@ -417,7 +427,7 @@ CT_GDB_CROSS_EXTRA_CONFIG_ARRAY=""
 # gdb version
 #
 # CT_DEBUG_GDB_SHOW_LINARO is not set
-# CT_GDB_V_7_4_1 is not set
+CT_GDB_V_7_4_1=y
 # CT_GDB_V_7_4 is not set
 # CT_GDB_V_7_3_1 is not set
 # CT_GDB_V_7_3a is not set
@@ -425,8 +435,12 @@ CT_GDB_CROSS_EXTRA_CONFIG_ARRAY=""
 # CT_GDB_V_7_1a is not set
 # CT_GDB_V_7_0_1a is not set
 # CT_GDB_V_7_0a is not set
-CT_GDB_V_6_8a=y
-CT_GDB_VERSION="6.8a"
+# CT_GDB_V_6_8a is not set
+CT_GDB_7_2_or_later=y
+CT_GDB_7_0_or_later=y
+CT_GDB_HAS_PKGVERSION_BUGURL=y
+CT_GDB_INSTALL_GDBINIT=y
+CT_GDB_VERSION="7.4.1"
 # CT_DEBUG_ltrace is not set
 # CT_DEBUG_strace is not set
 

@@ -13,7 +13,7 @@ OBJS= main.o
 # RaspberryPi library
 OBJS+= rpi_lib/rpi_init.o rpi_lib/bss/clearbss.o
 
-CFLAGS = -mfloat-abi=hard -mlittle-endian
+CFLAGS = -mfloat-abi=soft -mlittle-endian
 CFLAGS+= -nostdinc -fno-builtin
 CFLAGS+= -O0
 

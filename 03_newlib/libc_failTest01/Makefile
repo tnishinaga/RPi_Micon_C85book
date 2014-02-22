@@ -16,7 +16,7 @@ LIBS = -L/home/jitomesky/cross/rpi/arm-unknown-eabi/lib/gcc/arm-unknown-eabi/4.8
 # newlib
 LIBS += -L/home/jitomesky/cross/rpi/arm-unknown-eabi/arm-unknown-eabi/lib
 
-CFLAGS = -mfloat-abi=hard -mlittle-endian
+CFLAGS = -mfloat-abi=soft -mlittle-endian
 CFLAGS+= -fno-builtin
 #CFLAGS+= -O2
 

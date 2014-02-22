@@ -13,9 +13,9 @@ OBJS= main.o
 # RaspberryPi library
 OBJS+= rpi_lib/rpi_init.o rpi_lib/bss/clearbss.o rpi_lib/gpio/gpio.o rpi_lib/timer/timer.o rpi_lib/delay/delay.o
 
-CFLAGS = -mfloat-abi=hard -mlittle-endian
+CFLAGS = -mfloat-abi=soft -mlittle-endian
 CFLAGS+= -nostdinc -fno-builtin
-CFLAGS+= -O0 -gdwarf-2
+CFLAGS+= -O0 -gdwarf-2 -g
 
 ########################
 all:	rpi-micon.img
