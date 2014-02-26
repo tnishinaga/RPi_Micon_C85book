@@ -163,7 +163,7 @@ void digitalWrite(int pin, int value){
 		return;
 	}
 	// output
-	*res |= (0x01 << (pin % 32));
+	*res = (0x01 << (pin % 32));
 	return;
 }
 

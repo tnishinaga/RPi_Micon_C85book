@@ -10,7 +10,7 @@ ELF Header:
   Version:                           0x1
   Entry point address:               0x8000
   Start of program headers:          52 (bytes into file)
-  Start of section headers:          233676 (bytes into file)
+  Start of section headers:          233668 (bytes into file)
   Flags:                             0x5000002, has entry point, Version5 EABI
   Size of this header:               52 (bytes)
   Size of program headers:           32 (bytes)
@@ -22,24 +22,24 @@ ELF Header:
 Section Headers:
   [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
   [ 0]                   NULL            00000000 000000 000000 00      0   0  0
-  [ 1] .text             PROGBITS        00008000 000058 0085cc 00  AX  0   0  4
-  [ 2] .rodata           PROGBITS        000105d0 008628 000ac8 00  WA  0   0  8
-  [ 3] .rodata.str1.4    PROGBITS        00011098 0090f0 000124 01 AMS  0   0  4
-  [ 4] .rodata.str1.1    PROGBITS        000111bc 009214 00004b 01 AMS  0   0  1
-  [ 5] .bss              NOBITS          00011208 00925f 00004c 00  WA  0   0  4
-  [ 6] .ARM.attributes   ARM_ATTRIBUTES  00000000 00925f 000038 00      0   0  1
-  [ 7] .comment          PROGBITS        00000000 009297 000021 01  MS  0   0  1
-  [ 8] .debug_info       PROGBITS        00000000 0092b8 0184df 00      0   0  1
-  [ 9] .debug_abbrev     PROGBITS        00000000 021797 0050ef 00      0   0  1
-  [10] .debug_aranges    PROGBITS        00000000 026888 0005d8 00      0   0  8
-  [11] .debug_line       PROGBITS        00000000 026e60 006879 00      0   0  1
-  [12] .debug_str        PROGBITS        00000000 02d6d9 001e7f 01  MS  0   0  1
-  [13] .debug_frame      PROGBITS        00000000 02f558 000c68 00      0   0  4
-  [14] .debug_loc        PROGBITS        00000000 0301c0 008d37 00      0   0  1
-  [15] .debug_ranges     PROGBITS        00000000 038ef7 000108 00      0   0  1
-  [16] .shstrtab         STRTAB          00000000 038fff 0000cb 00      0   0  1
-  [17] .symtab           SYMTAB          00000000 0393c4 0021e0 10     18 324  4
-  [18] .strtab           STRTAB          00000000 03b5a4 000cb8 00      0   0  1
+  [ 1] .text             PROGBITS        00008000 000058 0085c8 00  AX  0   0  4
+  [ 2] .rodata           PROGBITS        000105c8 008620 000ac8 00  WA  0   0  8
+  [ 3] .rodata.str1.4    PROGBITS        00011090 0090e8 000124 01 AMS  0   0  4
+  [ 4] .rodata.str1.1    PROGBITS        000111b4 00920c 00004b 01 AMS  0   0  1
+  [ 5] .bss              NOBITS          00011200 009257 00004c 00  WA  0   0  4
+  [ 6] .ARM.attributes   ARM_ATTRIBUTES  00000000 009257 000038 00      0   0  1
+  [ 7] .comment          PROGBITS        00000000 00928f 000021 01  MS  0   0  1
+  [ 8] .debug_info       PROGBITS        00000000 0092b0 0184df 00      0   0  1
+  [ 9] .debug_abbrev     PROGBITS        00000000 02178f 0050ef 00      0   0  1
+  [10] .debug_aranges    PROGBITS        00000000 026880 0005d8 00      0   0  8
+  [11] .debug_line       PROGBITS        00000000 026e58 006879 00      0   0  1
+  [12] .debug_str        PROGBITS        00000000 02d6d1 001e7f 01  MS  0   0  1
+  [13] .debug_frame      PROGBITS        00000000 02f550 000c68 00      0   0  4
+  [14] .debug_loc        PROGBITS        00000000 0301b8 008d37 00      0   0  1
+  [15] .debug_ranges     PROGBITS        00000000 038eef 000108 00      0   0  1
+  [16] .shstrtab         STRTAB          00000000 038ff7 0000cb 00      0   0  1
+  [17] .symtab           SYMTAB          00000000 0393bc 0021e0 10     18 324  4
+  [18] .strtab           STRTAB          00000000 03b59c 000cb8 00      0   0  1
 Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings)
   I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
@@ -49,7 +49,7 @@ There are no section groups in this file.
 
 Program Headers:
   Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
-  LOAD           0x000058 0x00008000 0x00008000 0x09207 0x09254 RWE 0x8
+  LOAD           0x000058 0x00008000 0x00008000 0x091ff 0x0924c RWE 0x8
 
  Section to Segment mapping:
   Segment Sections...
@@ -65,10 +65,10 @@ Symbol table '.symtab' contains 542 entries:
    Num:    Value  Size Type    Bind   Vis      Ndx Name
      0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
      1: 00008000     0 SECTION LOCAL  DEFAULT    1 
-     2: 000105d0     0 SECTION LOCAL  DEFAULT    2 
-     3: 00011098     0 SECTION LOCAL  DEFAULT    3 
-     4: 000111bc     0 SECTION LOCAL  DEFAULT    4 
-     5: 00011208     0 SECTION LOCAL  DEFAULT    5 
+     2: 000105c8     0 SECTION LOCAL  DEFAULT    2 
+     3: 00011090     0 SECTION LOCAL  DEFAULT    3 
+     4: 000111b4     0 SECTION LOCAL  DEFAULT    4 
+     5: 00011200     0 SECTION LOCAL  DEFAULT    5 
      6: 00000000     0 SECTION LOCAL  DEFAULT    6 
      7: 00000000     0 SECTION LOCAL  DEFAULT    7 
      8: 00000000     0 SECTION LOCAL  DEFAULT    8 
@@ -100,14 +100,14 @@ Symbol table '.symtab' contains 542 entries:
     34: 0000820c     0 NOTYPE  LOCAL  DEFAULT    1 $d
     35: 00008230     0 NOTYPE  LOCAL  DEFAULT    1 $a
     36: 0000829c     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    37: 00011098     0 NOTYPE  LOCAL  DEFAULT    3 $d
-    38: 00011208     0 NOTYPE  LOCAL  DEFAULT    5 $d
-    39: 00011208     4 OBJECT  LOCAL  DEFAULT    5 led.4591
+    37: 00011090     0 NOTYPE  LOCAL  DEFAULT    3 $d
+    38: 00011200     0 NOTYPE  LOCAL  DEFAULT    5 $d
+    39: 00011200     4 OBJECT  LOCAL  DEFAULT    5 led.4591
     40: 00000000     0 FILE    LOCAL  DEFAULT  ABS syscalls.c
     41: 000082a4     0 NOTYPE  LOCAL  DEFAULT    1 $a
     42: 0000833c     0 NOTYPE  LOCAL  DEFAULT    1 $d
     43: 00008344     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    44: 000105d0     0 NOTYPE  LOCAL  DEFAULT    2 $d
+    44: 000105c8     0 NOTYPE  LOCAL  DEFAULT    2 $d
     45: 00000000     0 FILE    LOCAL  DEFAULT  ABS rpi_init.c
     46: 000083f0     0 NOTYPE  LOCAL  DEFAULT    1 $a
     47: 00008424     0 NOTYPE  LOCAL  DEFAULT    1 $d
@@ -124,487 +124,487 @@ Symbol table '.symtab' contains 542 entries:
     58: 00008570     0 NOTYPE  LOCAL  DEFAULT    1 $a
     59: 00008750     0 NOTYPE  LOCAL  DEFAULT    1 $d
     60: 0000876c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    61: 000087e0     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    62: 000087f0     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    63: 00008840     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    61: 000087dc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    62: 000087ec     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    63: 0000883c     0 NOTYPE  LOCAL  DEFAULT    1 $d
     64: 00000000     0 FILE    LOCAL  DEFAULT  ABS timer.c
-    65: 00008844     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    66: 00008858     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    67: 0000885c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    68: 00008898     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    65: 00008840     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    66: 00008854     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    67: 00008858     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    68: 00008894     0 NOTYPE  LOCAL  DEFAULT    1 $d
     69: 00000000     0 FILE    LOCAL  DEFAULT  ABS delay.c
-    70: 0000889c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    70: 00008898     0 NOTYPE  LOCAL  DEFAULT    1 $a
     71: 00000000     0 FILE    LOCAL  DEFAULT  ABS serial.c
-    72: 000088f4     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    73: 0000893c     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    74: 00008940     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    75: 00008a48     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    76: 00008a54     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    77: 00008a64     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    78: 00008a68     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    79: 00008a80     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    80: 00008a84     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    81: 00008b04     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    82: 00008b0c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    83: 00008b90     0 NOTYPE  LOCAL  DEFAULT    1 $d
-    84: 00008b98     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    85: 00010ea8     0 NOTYPE  LOCAL  DEFAULT    2 $d
-    86: 000105d8     0 NOTYPE  LOCAL  DEFAULT    2 $d
+    72: 000088f0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    73: 00008938     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    74: 0000893c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    75: 00008a44     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    76: 00008a50     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    77: 00008a60     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    78: 00008a64     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    79: 00008a7c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    80: 00008a80     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    81: 00008b00     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    82: 00008b08     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    83: 00008b8c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    84: 00008b94     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    85: 00010ea0     0 NOTYPE  LOCAL  DEFAULT    2 $d
+    86: 000105d0     0 NOTYPE  LOCAL  DEFAULT    2 $d
     87: 00000000     0 FILE    LOCAL  DEFAULT  ABS clearbss.c
-    88: 00008c90     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    89: 00008cc8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    88: 00008c8c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    89: 00008cc4     0 NOTYPE  LOCAL  DEFAULT    1 $d
     90: 00000000     0 FILE    LOCAL  DEFAULT  ABS errno.c
-    91: 00008cd0     0 NOTYPE  LOCAL  DEFAULT    1 $a
-    92: 00008cdc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    91: 00008ccc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+    92: 00008cd8     0 NOTYPE  LOCAL  DEFAULT    1 $d
     93: 00000010     0 NOTYPE  LOCAL  DEFAULT   13 $d
     94: 00000000     0 FILE    LOCAL  DEFAULT  ABS impure.c
-    95: 00010f2c     0 NOTYPE  LOCAL  DEFAULT    2 $d
-    96: 000105f0  1064 OBJECT  LOCAL  DEFAULT    2 impure_data
-    97: 000105e8     0 NOTYPE  LOCAL  DEFAULT    2 $d
+    95: 00010f24     0 NOTYPE  LOCAL  DEFAULT    2 $d
+    96: 000105e8  1064 OBJECT  LOCAL  DEFAULT    2 impure_data
+    97: 000105e0     0 NOTYPE  LOCAL  DEFAULT    2 $d
     98: 00000000     0 FILE    LOCAL  DEFAULT  ABS printf.c
-    99: 00008ce0     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   100: 00008d40     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    99: 00008cdc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   100: 00008d3c     0 NOTYPE  LOCAL  DEFAULT    1 $d
    101: 00000030     0 NOTYPE  LOCAL  DEFAULT   13 $d
    102: 00000000     0 FILE    LOCAL  DEFAULT  ABS vfprintf.c
-   103: 00008d44     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   104: 00008fa0     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   105: 00009104     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   106: 00009c54     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   107: 00009c80     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   108: 0000a5b8     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   109: 00010f30    16 OBJECT  LOCAL  DEFAULT    2 blanks.6752
-   110: 00010f40    16 OBJECT  LOCAL  DEFAULT    2 zeroes.6753
+   103: 00008d40     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   104: 00008f9c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   105: 00009100     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   106: 00009c50     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   107: 00009c7c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   108: 0000a5b4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   109: 00010f28    16 OBJECT  LOCAL  DEFAULT    2 blanks.6752
+   110: 00010f38    16 OBJECT  LOCAL  DEFAULT    2 zeroes.6753
    111: 0000008c     0 NOTYPE  LOCAL  DEFAULT   13 $d
    112: 00000000     0 FILE    LOCAL  DEFAULT  ABS wsetup.c
-   113: 0000a5bc     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   114: 0000a6f4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   113: 0000a5b8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   114: 0000a6f0     0 NOTYPE  LOCAL  DEFAULT    1 $d
    115: 000000e4     0 NOTYPE  LOCAL  DEFAULT   13 $d
    116: 00000000     0 FILE    LOCAL  DEFAULT  ABS dtoa.c
-   117: 0000a6f8     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   118: 0000a6f8   420 FUNC    LOCAL  DEFAULT    1 quorem
-   119: 0000abf0     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   120: 0000ac00     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   121: 0000b860     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   122: 0000b8b4     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   117: 0000a6f4     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   118: 0000a6f4   420 FUNC    LOCAL  DEFAULT    1 quorem
+   119: 0000abec     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   120: 0000abfc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   121: 0000b85c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   122: 0000b8b0     0 NOTYPE  LOCAL  DEFAULT    1 $a
    123: 00000110     0 NOTYPE  LOCAL  DEFAULT   13 $d
    124: 00000000     0 FILE    LOCAL  DEFAULT  ABS fflush.c
-   125: 0000ba98     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   126: 0000bcf0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   125: 0000ba94     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   126: 0000bcec     0 NOTYPE  LOCAL  DEFAULT    1 $d
    127: 00000178     0 NOTYPE  LOCAL  DEFAULT   13 $d
    128: 00000000     0 FILE    LOCAL  DEFAULT  ABS findfp.c
-   129: 0000bcfc     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   130: 0000bcfc     8 FUNC    LOCAL  DEFAULT    1 __fp_lock
-   131: 0000bd04     8 FUNC    LOCAL  DEFAULT    1 __fp_unlock
-   132: 0000bd14     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   133: 0000bd18     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   134: 0000bd64     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   135: 0000bd68     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   136: 0000bea8     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   137: 0000bebc     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   138: 0000bf90     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   139: 0000bf94     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   140: 0000bfb4     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   141: 0000bfbc     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   142: 0000bfcc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   129: 0000bcf8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   130: 0000bcf8     8 FUNC    LOCAL  DEFAULT    1 __fp_lock
+   131: 0000bd00     8 FUNC    LOCAL  DEFAULT    1 __fp_unlock
+   132: 0000bd10     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   133: 0000bd14     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   134: 0000bd60     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   135: 0000bd64     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   136: 0000bea4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   137: 0000beb8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   138: 0000bf8c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   139: 0000bf90     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   140: 0000bfb0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   141: 0000bfb8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   142: 0000bfc8     0 NOTYPE  LOCAL  DEFAULT    1 $d
    143: 000001d4     0 NOTYPE  LOCAL  DEFAULT   13 $d
    144: 00000000     0 FILE    LOCAL  DEFAULT  ABS mallocr.c
-   145: 0000bfd4     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   146: 0000c0c0     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   147: 0000c0cc     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   148: 0000c300     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   145: 0000bfd0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   146: 0000c0bc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   147: 0000c0c8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   148: 0000c2fc     0 NOTYPE  LOCAL  DEFAULT    1 $d
    149: 000002e8     0 NOTYPE  LOCAL  DEFAULT   13 $d
    150: 00000000     0 FILE    LOCAL  DEFAULT  ABS fwalk.c
-   151: 0000c314     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   151: 0000c310     0 NOTYPE  LOCAL  DEFAULT    1 $a
    152: 00000338     0 NOTYPE  LOCAL  DEFAULT   13 $d
    153: 00000000     0 FILE    LOCAL  DEFAULT  ABS locale.c
-   154: 0000c3e4     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   155: 0000c440     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   156: 0000c44c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   157: 0000c454     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   158: 0000c458     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   159: 0000c464     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   160: 0000c468     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   161: 0000c470     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   162: 0000c474     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   163: 0000c484     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   164: 0000c488     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   165: 0000c4a0     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   166: 0000c4a4     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   167: 0000c4ac     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   168: 00010a18     0 NOTYPE  LOCAL  DEFAULT    2 $d
-   169: 00010a18    32 OBJECT  LOCAL  DEFAULT    2 lc_ctype_charset
-   170: 00010a3c    32 OBJECT  LOCAL  DEFAULT    2 lc_message_charset
-   171: 00010a5c    56 OBJECT  LOCAL  DEFAULT    2 lconv
-   172: 0001120c     0 NOTYPE  LOCAL  DEFAULT    5 $d
+   154: 0000c3e0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   155: 0000c43c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   156: 0000c448     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   157: 0000c450     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   158: 0000c454     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   159: 0000c460     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   160: 0000c464     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   161: 0000c46c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   162: 0000c470     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   163: 0000c480     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   164: 0000c484     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   165: 0000c49c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   166: 0000c4a0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   167: 0000c4a8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   168: 00010a10     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   169: 00010a10    32 OBJECT  LOCAL  DEFAULT    2 lc_ctype_charset
+   170: 00010a34    32 OBJECT  LOCAL  DEFAULT    2 lc_message_charset
+   171: 00010a54    56 OBJECT  LOCAL  DEFAULT    2 lconv
+   172: 00011204     0 NOTYPE  LOCAL  DEFAULT    5 $d
    173: 0000038c     0 NOTYPE  LOCAL  DEFAULT   13 $d
    174: 00000000     0 FILE    LOCAL  DEFAULT  ABS makebuf.c
-   175: 0000c4b0     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   176: 0000c5dc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   175: 0000c4ac     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   176: 0000c5d8     0 NOTYPE  LOCAL  DEFAULT    1 $d
    177: 00000424     0 NOTYPE  LOCAL  DEFAULT   13 $d
    178: 00000000     0 FILE    LOCAL  DEFAULT  ABS mallocr.c
-   179: 0000c5e4     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   180: 0000cbbc     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   181: 00010a94     0 NOTYPE  LOCAL  DEFAULT    2 $d
-   182: 00011218     0 NOTYPE  LOCAL  DEFAULT    5 $d
+   179: 0000c5e0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   180: 0000cbb8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   181: 00010a8c     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   182: 00011210     0 NOTYPE  LOCAL  DEFAULT    5 $d
    183: 00000454     0 NOTYPE  LOCAL  DEFAULT   13 $d
    184: 00000000     0 FILE    LOCAL  DEFAULT  ABS memchr-stub.c
-   185: 0000cbc8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   185: 0000cbc4     0 NOTYPE  LOCAL  DEFAULT    1 $a
    186: 00000490     0 NOTYPE  LOCAL  DEFAULT   13 $d
    187: 00000000     0 FILE    LOCAL  DEFAULT  ABS memcpy-stub.c
-   188: 0000cbfc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   188: 0000cbf8     0 NOTYPE  LOCAL  DEFAULT    1 $a
    189: 000004b0     0 NOTYPE  LOCAL  DEFAULT   13 $d
    190: 00000000     0 FILE    LOCAL  DEFAULT  ABS memset.c
-   191: 0000cc18     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   191: 0000cc14     0 NOTYPE  LOCAL  DEFAULT    1 $a
    192: 000004d0     0 NOTYPE  LOCAL  DEFAULT   13 $d
    193: 00000000     0 FILE    LOCAL  DEFAULT  ABS mlock.c
-   194: 0000cc30     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   194: 0000cc2c     0 NOTYPE  LOCAL  DEFAULT    1 $a
    195: 000004f0     0 NOTYPE  LOCAL  DEFAULT   13 $d
    196: 00000000     0 FILE    LOCAL  DEFAULT  ABS mprec.c
-   197: 0000cc38     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   198: 0000d1e8     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   199: 0000d1f0     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   200: 0000d494     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   201: 0000d498     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   202: 0000d6fc     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   203: 0000d708     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   204: 00010f50     0 NOTYPE  LOCAL  DEFAULT    2 $d
-   205: 00010f50    12 OBJECT  LOCAL  DEFAULT    2 p05.5256
+   197: 0000cc34     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   198: 0000d1e4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   199: 0000d1ec     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   200: 0000d490     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   201: 0000d494     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   202: 0000d6f8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   203: 0000d704     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   204: 00010f48     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   205: 00010f48    12 OBJECT  LOCAL  DEFAULT    2 p05.5256
    206: 00000520     0 NOTYPE  LOCAL  DEFAULT   13 $d
    207: 00000000     0 FILE    LOCAL  DEFAULT  ABS s_fpclassify.c
-   208: 0000d7b4     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   209: 0000d818     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   208: 0000d7b0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   209: 0000d814     0 NOTYPE  LOCAL  DEFAULT    1 $d
    210: 00000730     0 NOTYPE  LOCAL  DEFAULT   13 $d
    211: 00000000     0 FILE    LOCAL  DEFAULT  ABS sbrkr.c
-   212: 0000d820     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   213: 0000d854     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   212: 0000d81c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   213: 0000d850     0 NOTYPE  LOCAL  DEFAULT    1 $d
    214: 00000750     0 NOTYPE  LOCAL  DEFAULT   13 $d
    215: 00000000     0 FILE    LOCAL  DEFAULT  ABS stdio.c
-   216: 0000d858     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   216: 0000d854     0 NOTYPE  LOCAL  DEFAULT    1 $a
    217: 0000077c     0 NOTYPE  LOCAL  DEFAULT   13 $d
    218: 00000000     0 FILE    LOCAL  DEFAULT  ABS strcmp.c
-   219: 0000d91c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   219: 0000d918     0 NOTYPE  LOCAL  DEFAULT    1 $a
    220: 000007fc     0 NOTYPE  LOCAL  DEFAULT   13 $d
    221: 00000000     0 FILE    LOCAL  DEFAULT  ABS strlen.c
-   222: 0000d938     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   222: 0000d934     0 NOTYPE  LOCAL  DEFAULT    1 $a
    223: 0000081c     0 NOTYPE  LOCAL  DEFAULT   13 $d
    224: 00000000     0 FILE    LOCAL  DEFAULT  ABS vfprintf.c
-   225: 0000d954     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   226: 0000e5c8     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   227: 0000e5e0     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   228: 0000e608     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   229: 00011078    16 OBJECT  LOCAL  DEFAULT    2 blanks.6695
-   230: 00011088    16 OBJECT  LOCAL  DEFAULT    2 zeroes.6696
+   225: 0000d950     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   226: 0000e5c4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   227: 0000e5dc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   228: 0000e604     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   229: 00011070    16 OBJECT  LOCAL  DEFAULT    2 blanks.6695
+   230: 00011080    16 OBJECT  LOCAL  DEFAULT    2 zeroes.6696
    231: 0000083c     0 NOTYPE  LOCAL  DEFAULT   13 $d
    232: 00000000     0 FILE    LOCAL  DEFAULT  ABS writer.c
-   233: 0000e60c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   234: 0000e648     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   233: 0000e608     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   234: 0000e644     0 NOTYPE  LOCAL  DEFAULT    1 $d
    235: 000008b8     0 NOTYPE  LOCAL  DEFAULT   13 $d
    236: 00000000     0 FILE    LOCAL  DEFAULT  ABS mallocr.c
-   237: 0000e64c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   237: 0000e648     0 NOTYPE  LOCAL  DEFAULT    1 $a
    238: 000008e4     0 NOTYPE  LOCAL  DEFAULT   13 $d
    239: 00000000     0 FILE    LOCAL  DEFAULT  ABS closer.c
-   240: 0000e6d8     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   241: 0000e70c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   240: 0000e6d4     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   241: 0000e708     0 NOTYPE  LOCAL  DEFAULT    1 $d
    242: 0000090c     0 NOTYPE  LOCAL  DEFAULT   13 $d
    243: 00000000     0 FILE    LOCAL  DEFAULT  ABS fclose.c
-   244: 0000e710     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   245: 0000e800     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   244: 0000e70c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   245: 0000e7fc     0 NOTYPE  LOCAL  DEFAULT    1 $d
    246: 00000938     0 NOTYPE  LOCAL  DEFAULT   13 $d
    247: 00000000     0 FILE    LOCAL  DEFAULT  ABS fputwc.c
-   248: 0000e804     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   249: 0000e970     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   248: 0000e800     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   249: 0000e96c     0 NOTYPE  LOCAL  DEFAULT    1 $d
    250: 00000974     0 NOTYPE  LOCAL  DEFAULT   13 $d
    251: 00000000     0 FILE    LOCAL  DEFAULT  ABS fstatr.c
-   252: 0000e974     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   253: 0000e9ac     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   252: 0000e970     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   253: 0000e9a8     0 NOTYPE  LOCAL  DEFAULT    1 $d
    254: 000009c4     0 NOTYPE  LOCAL  DEFAULT   13 $d
    255: 00000000     0 FILE    LOCAL  DEFAULT  ABS fvwrite.c
-   256: 0000e9b0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   256: 0000e9ac     0 NOTYPE  LOCAL  DEFAULT    1 $a
    257: 000009f0     0 NOTYPE  LOCAL  DEFAULT   13 $d
    258: 00000000     0 FILE    LOCAL  DEFAULT  ABS isattyr.c
-   259: 0000edf0     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   260: 0000ee24     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   259: 0000edec     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   260: 0000ee20     0 NOTYPE  LOCAL  DEFAULT    1 $d
    261: 00000a28     0 NOTYPE  LOCAL  DEFAULT   13 $d
    262: 00000000     0 FILE    LOCAL  DEFAULT  ABS lseekr.c
-   263: 0000ee28     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   264: 0000ee64     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   263: 0000ee24     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   264: 0000ee60     0 NOTYPE  LOCAL  DEFAULT    1 $d
    265: 00000a54     0 NOTYPE  LOCAL  DEFAULT   13 $d
    266: 00000000     0 FILE    LOCAL  DEFAULT  ABS memmove.c
-   267: 0000ee68     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   267: 0000ee64     0 NOTYPE  LOCAL  DEFAULT    1 $a
    268: 00000a80     0 NOTYPE  LOCAL  DEFAULT   13 $d
    269: 00000000     0 FILE    LOCAL  DEFAULT  ABS readr.c
-   270: 0000eec0     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   271: 0000eefc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   270: 0000eebc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   271: 0000eef8     0 NOTYPE  LOCAL  DEFAULT    1 $d
    272: 00000aa0     0 NOTYPE  LOCAL  DEFAULT   13 $d
    273: 00000000     0 FILE    LOCAL  DEFAULT  ABS mallocr.c
-   274: 0000ef00     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   275: 0000f408     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   274: 0000eefc     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   275: 0000f404     0 NOTYPE  LOCAL  DEFAULT    1 $d
    276: 00000acc     0 NOTYPE  LOCAL  DEFAULT   13 $d
    277: 00000000     0 FILE    LOCAL  DEFAULT  ABS reent.c
-   278: 0000f40c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   279: 0000f52c     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   280: 0000f530     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   281: 0000f588     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   278: 0000f408     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   279: 0000f528     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   280: 0000f52c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   281: 0000f584     0 NOTYPE  LOCAL  DEFAULT    1 $d
    282: 00000b08     0 NOTYPE  LOCAL  DEFAULT   13 $d
    283: 00000000     0 FILE    LOCAL  DEFAULT  ABS wbuf.c
-   284: 0000f58c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   285: 0000f6b0     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   284: 0000f588     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   285: 0000f6ac     0 NOTYPE  LOCAL  DEFAULT    1 $d
    286: 00000b6c     0 NOTYPE  LOCAL  DEFAULT   13 $d
    287: 00000000     0 FILE    LOCAL  DEFAULT  ABS wcrtomb.c
-   288: 0000f6b4     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   289: 0000f72c     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   290: 0000f730     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   291: 0000f758     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   288: 0000f6b0     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   289: 0000f728     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   290: 0000f72c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   291: 0000f754     0 NOTYPE  LOCAL  DEFAULT    1 $d
    292: 00000ba8     0 NOTYPE  LOCAL  DEFAULT   13 $d
    293: 00000000     0 FILE    LOCAL  DEFAULT  ABS wctomb_r.c
-   294: 0000f75c     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   295: 0000f7c8     0 NOTYPE  LOCAL  DEFAULT    1 $d
-   296: 00010ea4     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   294: 0000f758     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   295: 0000f7c4     0 NOTYPE  LOCAL  DEFAULT    1 $d
+   296: 00010e9c     0 NOTYPE  LOCAL  DEFAULT    2 $d
    297: 00000bf4     0 NOTYPE  LOCAL  DEFAULT   13 $d
-   298: 0000f7cc     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   299: 0000f7cc     0 NOTYPE  LOCAL  DEFAULT    1 .udivsi3_skip_div0_test
+   298: 0000f7c8     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   299: 0000f7c8     0 NOTYPE  LOCAL  DEFAULT    1 .udivsi3_skip_div0_test
    300: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS shift
    301: 00000c38     0 NOTYPE  LOCAL  DEFAULT   13 $d
    302: 00000504     0 NOTYPE  LOCAL  DEFAULT   10 $d
-   303: 0000f9d8     0 NOTYPE  LOCAL  DEFAULT    1 $a
-   304: 0000f9e0     0 NOTYPE  LOCAL  DEFAULT    1 .divsi3_skip_div0_test
+   303: 0000f9d4     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   304: 0000f9dc     0 NOTYPE  LOCAL  DEFAULT    1 .divsi3_skip_div0_test
    305: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS shift
    306: 00000c58     0 NOTYPE  LOCAL  DEFAULT   13 $d
    307: 00000524     0 NOTYPE  LOCAL  DEFAULT   10 $d
-   308: 0000fc18     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   308: 0000fc14     0 NOTYPE  LOCAL  DEFAULT    1 $a
    309: 00000544     0 NOTYPE  LOCAL  DEFAULT   10 $d
-   310: 0000fc1c     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   310: 0000fc18     0 NOTYPE  LOCAL  DEFAULT    1 $a
    311: 00000564     0 NOTYPE  LOCAL  DEFAULT   10 $d
-   312: 0000ffd4     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   312: 0000ffd0     0 NOTYPE  LOCAL  DEFAULT    1 $a
    313: 00000584     0 NOTYPE  LOCAL  DEFAULT   10 $d
-   314: 00010444     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   314: 00010440     0 NOTYPE  LOCAL  DEFAULT    1 $a
    315: 000005a4     0 NOTYPE  LOCAL  DEFAULT   10 $d
-   316: 00010570     0 NOTYPE  LOCAL  DEFAULT    1 $a
+   316: 0001056c     0 NOTYPE  LOCAL  DEFAULT    1 $a
    317: 000005c4     0 NOTYPE  LOCAL  DEFAULT   10 $d
-   318: 000111bc     0 NOTYPE  LOCAL  DEFAULT    4 $d
-   319: 00010f30     0 NOTYPE  LOCAL  DEFAULT    2 $d
-   320: 000111be     0 NOTYPE  LOCAL  DEFAULT    4 $d
-   321: 000111f2     0 NOTYPE  LOCAL  DEFAULT    4 $d
-   322: 000111ff     0 NOTYPE  LOCAL  DEFAULT    4 $d
-   323: 00011078     0 NOTYPE  LOCAL  DEFAULT    2 $d
-   324: 0000d6bc    76 FUNC    GLOBAL DEFAULT    1 _mprec_log10
-   325: 0000d748   108 FUNC    GLOBAL DEFAULT    1 __any_on
-   326: 0000edf0    56 FUNC    GLOBAL DEFAULT    1 _isatty_r
-   327: 00011028    40 OBJECT  GLOBAL DEFAULT    2 __mprec_tinytens
-   328: 00010534    20 FUNC    GLOBAL HIDDEN     1 __aeabi_dcmple
-   329: 0000f40c    44 FUNC    GLOBAL DEFAULT    1 cleanup_glue
+   318: 000111b4     0 NOTYPE  LOCAL  DEFAULT    4 $d
+   319: 00010f28     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   320: 000111b6     0 NOTYPE  LOCAL  DEFAULT    4 $d
+   321: 000111ea     0 NOTYPE  LOCAL  DEFAULT    4 $d
+   322: 000111f7     0 NOTYPE  LOCAL  DEFAULT    4 $d
+   323: 00011070     0 NOTYPE  LOCAL  DEFAULT    2 $d
+   324: 0000d6b8    76 FUNC    GLOBAL DEFAULT    1 _mprec_log10
+   325: 0000d744   108 FUNC    GLOBAL DEFAULT    1 __any_on
+   326: 0000edec    56 FUNC    GLOBAL DEFAULT    1 _isatty_r
+   327: 00011020    40 OBJECT  GLOBAL DEFAULT    2 __mprec_tinytens
+   328: 00010530    20 FUNC    GLOBAL HIDDEN     1 __aeabi_dcmple
+   329: 0000f408    44 FUNC    GLOBAL DEFAULT    1 cleanup_glue
    330: 00008308     8 FUNC    GLOBAL DEFAULT    1 _getpid
-   331: 00010454   136 FUNC    GLOBAL HIDDEN     1 __cmpdf2
-   332: 0000ee28    64 FUNC    GLOBAL DEFAULT    1 _lseek_r
+   331: 00010450   136 FUNC    GLOBAL HIDDEN     1 __cmpdf2
+   332: 0000ee24    64 FUNC    GLOBAL DEFAULT    1 _lseek_r
    333: 00008128    96 FUNC    GLOBAL DEFAULT    1 timerIRQ_handler
-   334: 00010454   136 FUNC    GLOBAL HIDDEN     1 __eqdf2
-   335: 0001124c     4 OBJECT  GLOBAL DEFAULT    5 prev_heap_end
-   336: 0000ff74    96 FUNC    GLOBAL HIDDEN     1 __floatdidf
-   337: 00008d0c    56 FUNC    GLOBAL DEFAULT    1 printf
-   338: 0000f6b4   124 FUNC    GLOBAL DEFAULT    1 _wcrtomb_r
-   339: 0000d8e4    48 FUNC    GLOBAL DEFAULT    1 __sseek
-   340: 0000bd68   340 FUNC    GLOBAL DEFAULT    1 __sinit
-   341: 0000f58c   268 FUNC    GLOBAL DEFAULT    1 __swbuf_r
+   334: 00010450   136 FUNC    GLOBAL HIDDEN     1 __eqdf2
+   335: 00011244     4 OBJECT  GLOBAL DEFAULT    5 prev_heap_end
+   336: 0000ff70    96 FUNC    GLOBAL HIDDEN     1 __floatdidf
+   337: 00008d08    56 FUNC    GLOBAL DEFAULT    1 printf
+   338: 0000f6b0   124 FUNC    GLOBAL DEFAULT    1 _wcrtomb_r
+   339: 0000d8e0    48 FUNC    GLOBAL DEFAULT    1 __sseek
+   340: 0000bd64   340 FUNC    GLOBAL DEFAULT    1 __sinit
+   341: 0000f588   268 FUNC    GLOBAL DEFAULT    1 __swbuf_r
    342: 000080a8     0 NOTYPE  GLOBAL DEFAULT    1 _initial_vector_end
-   343: 0000c3e4   104 FUNC    GLOBAL DEFAULT    1 _setlocale_r
-   344: 0000bd18    64 FUNC    GLOBAL DEFAULT    1 __sfmoreglue
-   345: 0000cc34     4 FUNC    GLOBAL DEFAULT    1 __malloc_unlock
+   343: 0000c3e0   104 FUNC    GLOBAL DEFAULT    1 _setlocale_r
+   344: 0000bd14    64 FUNC    GLOBAL DEFAULT    1 __sfmoreglue
+   345: 0000cc30     4 FUNC    GLOBAL DEFAULT    1 __malloc_unlock
    346: 000082a4     4 FUNC    GLOBAL DEFAULT    1 initialise_monitor_handle
-   347: 0000ee68    88 FUNC    GLOBAL DEFAULT    1 memmove
-   348: 0000bd58    16 FUNC    GLOBAL DEFAULT    1 _cleanup
-   349: 0000cc38   136 FUNC    GLOBAL DEFAULT    1 _Balloc
-   350: 00010444   152 FUNC    GLOBAL HIDDEN     1 __gtdf2
-   351: 00008cd0    16 FUNC    GLOBAL DEFAULT    1 __errno
-   352: 00008a68    28 FUNC    GLOBAL DEFAULT    1 Serial_available
-   353: 0000e974    60 FUNC    GLOBAL DEFAULT    1 _fstat_r
-   354: 00008c90    64 FUNC    GLOBAL DEFAULT    1 clearBss
-   355: 00011250     4 OBJECT  GLOBAL DEFAULT    5 errno
-   356: 0000d888     8 FUNC    GLOBAL DEFAULT    1 __seofread
-   357: 000104f8    20 FUNC    GLOBAL HIDDEN     1 __aeabi_cdcmple
-   358: 000087f0    84 FUNC    GLOBAL DEFAULT    1 digitalRead
-   359: 000105e0     8 OBJECT  GLOBAL DEFAULT    2 write_to
-   360: 0000885c    64 FUNC    GLOBAL DEFAULT    1 get_systime
-   361: 0000cbfc    28 FUNC    GLOBAL DEFAULT    1 memcpy
-   362: 000104dc    48 FUNC    GLOBAL HIDDEN     1 __aeabi_cdrcmple
-   363: 0000bd0c    12 FUNC    GLOBAL DEFAULT    1 _cleanup_r
-   364: 0000fef8    40 FUNC    GLOBAL HIDDEN     1 __floatsidf
+   347: 0000ee64    88 FUNC    GLOBAL DEFAULT    1 memmove
+   348: 0000bd54    16 FUNC    GLOBAL DEFAULT    1 _cleanup
+   349: 0000cc34   136 FUNC    GLOBAL DEFAULT    1 _Balloc
+   350: 00010440   152 FUNC    GLOBAL HIDDEN     1 __gtdf2
+   351: 00008ccc    16 FUNC    GLOBAL DEFAULT    1 __errno
+   352: 00008a64    28 FUNC    GLOBAL DEFAULT    1 Serial_available
+   353: 0000e970    60 FUNC    GLOBAL DEFAULT    1 _fstat_r
+   354: 00008c8c    64 FUNC    GLOBAL DEFAULT    1 clearBss
+   355: 00011248     4 OBJECT  GLOBAL DEFAULT    5 errno
+   356: 0000d884     8 FUNC    GLOBAL DEFAULT    1 __seofread
+   357: 000104f4    20 FUNC    GLOBAL HIDDEN     1 __aeabi_cdcmple
+   358: 000087ec    84 FUNC    GLOBAL DEFAULT    1 digitalRead
+   359: 000105d8     8 OBJECT  GLOBAL DEFAULT    2 write_to
+   360: 00008858    64 FUNC    GLOBAL DEFAULT    1 get_systime
+   361: 0000cbf8    28 FUNC    GLOBAL DEFAULT    1 memcpy
+   362: 000104d8    48 FUNC    GLOBAL HIDDEN     1 __aeabi_cdrcmple
+   363: 0000bd08    12 FUNC    GLOBAL DEFAULT    1 _cleanup_r
+   364: 0000fef4    40 FUNC    GLOBAL HIDDEN     1 __floatsidf
    365: 00008188   168 FUNC    GLOBAL DEFAULT    1 IRQ_handler
-   366: 0001044c   144 FUNC    GLOBAL HIDDEN     1 __ltdf2
+   366: 00010448   144 FUNC    GLOBAL HIDDEN     1 __ltdf2
    367: 00012000     0 NOTYPE  GLOBAL DEFAULT  ABS __free_start
-   368: 00011208     0 NOTYPE  GLOBAL DEFAULT  ABS __rodata_end
-   369: 0000d7b4   108 FUNC    GLOBAL DEFAULT    1 __fpclassifyd
-   370: 0000d650   108 FUNC    GLOBAL DEFAULT    1 __ratio
-   371: 00008ce0    44 FUNC    GLOBAL DEFAULT    1 _printf_r
-   372: 0000f7cc   492 FUNC    GLOBAL HIDDEN     1 __udivsi3
+   368: 00011200     0 NOTYPE  GLOBAL DEFAULT  ABS __rodata_end
+   369: 0000d7b0   108 FUNC    GLOBAL DEFAULT    1 __fpclassifyd
+   370: 0000d64c   108 FUNC    GLOBAL DEFAULT    1 __ratio
+   371: 00008cdc    44 FUNC    GLOBAL DEFAULT    1 _printf_r
+   372: 0000f7c8   492 FUNC    GLOBAL HIDDEN     1 __udivsi3
    373: 00008344     8 FUNC    GLOBAL DEFAULT    1 _fstat
-   374: 00010f60   200 OBJECT  GLOBAL DEFAULT    2 __mprec_tens
-   375: 0000c44c    12 FUNC    GLOBAL DEFAULT    1 __locale_charset
-   376: 00011218     4 OBJECT  GLOBAL DEFAULT    5 __malloc_top_pad
-   377: 00010a38     4 OBJECT  GLOBAL DEFAULT    2 __mb_cur_max
-   378: 0000fed4    36 FUNC    GLOBAL HIDDEN     1 __aeabi_ui2d
+   374: 00010f58   200 OBJECT  GLOBAL DEFAULT    2 __mprec_tens
+   375: 0000c448    12 FUNC    GLOBAL DEFAULT    1 __locale_charset
+   376: 00011210     4 OBJECT  GLOBAL DEFAULT    5 __malloc_top_pad
+   377: 00010a30     4 OBJECT  GLOBAL DEFAULT    2 __mb_cur_max
+   378: 0000fed0    36 FUNC    GLOBAL HIDDEN     1 __aeabi_ui2d
    379: 000080ac   124 FUNC    GLOBAL DEFAULT    1 set_vector_table
-   380: 0000c47c    12 FUNC    GLOBAL DEFAULT    1 _localeconv_r
-   381: 0000e9b0  1088 FUNC    GLOBAL DEFAULT    1 __sfvwrite_r
-   382: 0000cf5c    32 FUNC    GLOBAL DEFAULT    1 __i2b
-   383: 0000fc1c     0 FUNC    GLOBAL HIDDEN     1 __aeabi_drsub
-   384: 0000d820    56 FUNC    GLOBAL DEFAULT    1 _sbrk_r
-   385: 0000876c   132 FUNC    GLOBAL DEFAULT    1 digitalWrite
-   386: 0000eec0    64 FUNC    GLOBAL DEFAULT    1 _read_r
-   387: 00010520    20 FUNC    GLOBAL HIDDEN     1 __aeabi_dcmplt
-   388: 0000e710   224 FUNC    GLOBAL DEFAULT    1 _fclose_r
-   389: 0000bccc    48 FUNC    GLOBAL DEFAULT    1 fflush
-   390: 00011244     4 OBJECT  GLOBAL DEFAULT    5 __malloc_max_sbrked_mem
+   380: 0000c478    12 FUNC    GLOBAL DEFAULT    1 _localeconv_r
+   381: 0000e9ac  1088 FUNC    GLOBAL DEFAULT    1 __sfvwrite_r
+   382: 0000cf58    32 FUNC    GLOBAL DEFAULT    1 __i2b
+   383: 0000fc18     0 FUNC    GLOBAL HIDDEN     1 __aeabi_drsub
+   384: 0000d81c    56 FUNC    GLOBAL DEFAULT    1 _sbrk_r
+   385: 0000876c   128 FUNC    GLOBAL DEFAULT    1 digitalWrite
+   386: 0000eebc    64 FUNC    GLOBAL DEFAULT    1 _read_r
+   387: 0001051c    20 FUNC    GLOBAL HIDDEN     1 __aeabi_dcmplt
+   388: 0000e70c   224 FUNC    GLOBAL DEFAULT    1 _fclose_r
+   389: 0000bcc8    48 FUNC    GLOBAL DEFAULT    1 fflush
+   390: 0001123c     4 OBJECT  GLOBAL DEFAULT    5 __malloc_max_sbrked_mem
    391: 00008518   596 FUNC    GLOBAL DEFAULT    1 pinMode
-   392: 0000ff20    64 FUNC    GLOBAL HIDDEN     1 __extendsfdf2
-   393: 00010240   516 FUNC    GLOBAL HIDDEN     1 __aeabi_ddiv
+   392: 0000ff1c    64 FUNC    GLOBAL HIDDEN     1 __extendsfdf2
+   393: 0001023c   516 FUNC    GLOBAL HIDDEN     1 __aeabi_ddiv
    394: 00008068     0 NOTYPE  GLOBAL DEFAULT    1 _initial_vector_start
-   395: 0000fc28   684 FUNC    GLOBAL HIDDEN     1 __adddf3
-   396: 0000d498   188 FUNC    GLOBAL DEFAULT    1 __b2d
-   397: 0000ffd4   620 FUNC    GLOBAL HIDDEN     1 __aeabi_dmul
+   395: 0000fc24   684 FUNC    GLOBAL HIDDEN     1 __adddf3
+   396: 0000d494   188 FUNC    GLOBAL DEFAULT    1 __b2d
+   397: 0000ffd0   620 FUNC    GLOBAL HIDDEN     1 __aeabi_dmul
    398: 000083b0     8 FUNC    GLOBAL DEFAULT    1 _isatty
-   399: 00010f2c     4 OBJECT  GLOBAL DEFAULT    2 _global_impure_ptr
-   400: 0000ef00  1292 FUNC    GLOBAL DEFAULT    1 _realloc_r
-   401: 00011254     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_end
-   402: 0000e804   296 FUNC    GLOBAL DEFAULT    1 _fputwc_r
-   403: 00011050    40 OBJECT  GLOBAL DEFAULT    2 __mprec_bigtens
-   404: 0000cd94   204 FUNC    GLOBAL DEFAULT    1 __s2b
+   399: 00010f24     4 OBJECT  GLOBAL DEFAULT    2 _global_impure_ptr
+   400: 0000eefc  1292 FUNC    GLOBAL DEFAULT    1 _realloc_r
+   401: 0001124c     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_end
+   402: 0000e800   296 FUNC    GLOBAL DEFAULT    1 _fputwc_r
+   403: 00011048    40 OBJECT  GLOBAL DEFAULT    2 __mprec_bigtens
+   404: 0000cd90   204 FUNC    GLOBAL DEFAULT    1 __s2b
    405: 000082e4    16 FUNC    GLOBAL DEFAULT    1 _open
-   406: 0000fed4    36 FUNC    GLOBAL HIDDEN     1 __floatunsidf
+   406: 0000fed0    36 FUNC    GLOBAL HIDDEN     1 __floatunsidf
    407: 00008310    52 FUNC    GLOBAL DEFAULT    1 _sbrk
-   408: 0000d2d4    96 FUNC    GLOBAL DEFAULT    1 __mcmp
-   409: 0000bfa4    24 FUNC    GLOBAL DEFAULT    1 __fp_lock_all
+   408: 0000d2d0    96 FUNC    GLOBAL DEFAULT    1 __mcmp
+   409: 0000bfa0    24 FUNC    GLOBAL DEFAULT    1 __fp_lock_all
    410: 00008364     4 FUNC    GLOBAL DEFAULT    1 _raise
-   411: 00008940   276 FUNC    GLOBAL DEFAULT    1 Serial_begin
+   411: 0000893c   276 FUNC    GLOBAL DEFAULT    1 Serial_begin
    412: 00008390    32 FUNC    GLOBAL DEFAULT    1 _times
-   413: 0000f438   248 FUNC    GLOBAL DEFAULT    1 _reclaim_reent
-   414: 0000ce60   100 FUNC    GLOBAL DEFAULT    1 __hi0bits
-   415: 00010570    92 FUNC    GLOBAL HIDDEN     1 __fixdfsi
-   416: 0000fc28   684 FUNC    GLOBAL HIDDEN     1 __aeabi_dadd
-   417: 0001044c   144 FUNC    GLOBAL HIDDEN     1 __ledf2
+   413: 0000f434   248 FUNC    GLOBAL DEFAULT    1 _reclaim_reent
+   414: 0000ce5c   100 FUNC    GLOBAL DEFAULT    1 __hi0bits
+   415: 0001056c    92 FUNC    GLOBAL HIDDEN     1 __fixdfsi
+   416: 0000fc24   684 FUNC    GLOBAL HIDDEN     1 __aeabi_dadd
+   417: 00010448   144 FUNC    GLOBAL HIDDEN     1 __ledf2
    418: 0000834c     8 FUNC    GLOBAL DEFAULT    1 _stat
-   419: 0000d118   216 FUNC    GLOBAL DEFAULT    1 __pow5mult
-   420: 0000ff60   116 FUNC    GLOBAL HIDDEN     1 __aeabi_ul2d
-   421: 00011214     4 OBJECT  GLOBAL DEFAULT    5 __nlocale_changed
-   422: 0000f530    92 FUNC    GLOBAL DEFAULT    1 _wrapup_reent
-   423: 0000f9d8     0 FUNC    GLOBAL HIDDEN     1 __aeabi_idiv
+   419: 0000d114   216 FUNC    GLOBAL DEFAULT    1 __pow5mult
+   420: 0000ff5c   116 FUNC    GLOBAL HIDDEN     1 __aeabi_ul2d
+   421: 0001120c     4 OBJECT  GLOBAL DEFAULT    5 __nlocale_changed
+   422: 0000f52c    92 FUNC    GLOBAL DEFAULT    1 _wrapup_reent
+   423: 0000f9d4     0 FUNC    GLOBAL HIDDEN     1 __aeabi_idiv
    424: 0000804c     0 NOTYPE  GLOBAL DEFAULT    1 disable_IRQ
-   425: 0001055c    20 FUNC    GLOBAL HIDDEN     1 __aeabi_dcmpgt
-   426: 0000bf94     4 FUNC    GLOBAL DEFAULT    1 __sfp_lock_acquire
-   427: 0000cbc8    52 FUNC    GLOBAL DEFAULT    1 memchr
-   428: 0000c0cc   584 FUNC    GLOBAL DEFAULT    1 _free_r
-   429: 0000c458    16 FUNC    GLOBAL DEFAULT    1 __locale_mb_cur_max
-   430: 00010548    20 FUNC    GLOBAL HIDDEN     1 __aeabi_dcmpge
-   431: 00011210     4 OBJECT  GLOBAL DEFAULT    5 __mlocale_changed
-   432: 00008c40    80 FUNC    GLOBAL DEFAULT    1 uart0_gets
-   433: 0000fc24   688 FUNC    GLOBAL HIDDEN     1 __aeabi_dsub
-   434: 00010e9c     4 OBJECT  GLOBAL DEFAULT    2 __malloc_sbrk_base
+   425: 00010558    20 FUNC    GLOBAL HIDDEN     1 __aeabi_dcmpgt
+   426: 0000bf90     4 FUNC    GLOBAL DEFAULT    1 __sfp_lock_acquire
+   427: 0000cbc4    52 FUNC    GLOBAL DEFAULT    1 memchr
+   428: 0000c0c8   584 FUNC    GLOBAL DEFAULT    1 _free_r
+   429: 0000c454    16 FUNC    GLOBAL DEFAULT    1 __locale_mb_cur_max
+   430: 00010544    20 FUNC    GLOBAL HIDDEN     1 __aeabi_dcmpge
+   431: 00011208     4 OBJECT  GLOBAL DEFAULT    5 __mlocale_changed
+   432: 00008c3c    80 FUNC    GLOBAL DEFAULT    1 uart0_gets
+   433: 0000fc20   688 FUNC    GLOBAL HIDDEN     1 __aeabi_dsub
+   434: 00010e94     4 OBJECT  GLOBAL DEFAULT    2 __malloc_sbrk_base
    435: 00008000     0 NOTYPE  GLOBAL DEFAULT    1 _start
-   436: 0000ff60   116 FUNC    GLOBAL HIDDEN     1 __floatundidf
+   436: 0000ff5c   116 FUNC    GLOBAL HIDDEN     1 __floatundidf
    437: 000082b0     8 FUNC    GLOBAL DEFAULT    1 _lseek
-   438: 000105cc     0 NOTYPE  GLOBAL DEFAULT  ABS __rodata_start
-   439: 0000d1f0   228 FUNC    GLOBAL DEFAULT    1 __lshift
-   440: 00011208     0 NOTYPE  GLOBAL DEFAULT  ABS __data_end
+   438: 000105c8     0 NOTYPE  GLOBAL DEFAULT  ABS __rodata_start
+   439: 0000d1ec   228 FUNC    GLOBAL DEFAULT    1 __lshift
+   440: 00011200     0 NOTYPE  GLOBAL DEFAULT  ABS __data_end
    441: 000083f0    56 FUNC    GLOBAL DEFAULT    1 rpi_init
-   442: 0000cf7c   412 FUNC    GLOBAL DEFAULT    1 __multiply
-   443: 0001121c    40 OBJECT  GLOBAL DEFAULT    5 __malloc_current_mallinfo
-   444: 0000d554   252 FUNC    GLOBAL DEFAULT    1 __d2b
-   445: 0000e6d8    56 FUNC    GLOBAL DEFAULT    1 _close_r
-   446: 0000fef8    40 FUNC    GLOBAL HIDDEN     1 __aeabi_i2d
-   447: 0000a5bc   316 FUNC    GLOBAL DEFAULT    1 __swsetup_r
-   448: 0000fc18     4 FUNC    WEAK   HIDDEN     1 __aeabi_ldiv0
-   449: 00010240   516 FUNC    GLOBAL HIDDEN     1 __divdf3
-   450: 0000bebc   216 FUNC    GLOBAL DEFAULT    1 __sfp
-   451: 0000d708    64 FUNC    GLOBAL DEFAULT    1 __copybits
-   452: 00010a94  1032 OBJECT  GLOBAL DEFAULT    2 __malloc_av_
-   453: 0000bfa0     4 FUNC    GLOBAL DEFAULT    1 __sinit_lock_release
-   454: 0000ffd4   620 FUNC    GLOBAL HIDDEN     1 __muldf3
-   455: 0000d858    48 FUNC    GLOBAL DEFAULT    1 __sread
+   442: 0000cf78   412 FUNC    GLOBAL DEFAULT    1 __multiply
+   443: 00011214    40 OBJECT  GLOBAL DEFAULT    5 __malloc_current_mallinfo
+   444: 0000d550   252 FUNC    GLOBAL DEFAULT    1 __d2b
+   445: 0000e6d4    56 FUNC    GLOBAL DEFAULT    1 _close_r
+   446: 0000fef4    40 FUNC    GLOBAL HIDDEN     1 __aeabi_i2d
+   447: 0000a5b8   316 FUNC    GLOBAL DEFAULT    1 __swsetup_r
+   448: 0000fc14     4 FUNC    WEAK   HIDDEN     1 __aeabi_ldiv0
+   449: 0001023c   516 FUNC    GLOBAL HIDDEN     1 __divdf3
+   450: 0000beb8   216 FUNC    GLOBAL DEFAULT    1 __sfp
+   451: 0000d704    64 FUNC    GLOBAL DEFAULT    1 __copybits
+   452: 00010a8c  1032 OBJECT  GLOBAL DEFAULT    2 __malloc_av_
+   453: 0000bf9c     4 FUNC    GLOBAL DEFAULT    1 __sinit_lock_release
+   454: 0000ffd0   620 FUNC    GLOBAL HIDDEN     1 __muldf3
+   455: 0000d854    48 FUNC    GLOBAL DEFAULT    1 __sread
    456: 00008020     0 NOTYPE  GLOBAL DEFAULT    1 _hangup
-   457: 00008bd4   108 FUNC    GLOBAL DEFAULT    1 uart0_puts
-   458: 0000cc30     4 FUNC    GLOBAL DEFAULT    1 __malloc_lock
+   457: 00008bd0   108 FUNC    GLOBAL DEFAULT    1 uart0_puts
+   458: 0000cc2c     4 FUNC    GLOBAL DEFAULT    1 __malloc_lock
    459: 00008060     0 NOTYPE  GLOBAL DEFAULT    1 getmode
-   460: 0000bc90    60 FUNC    GLOBAL DEFAULT    1 _fflush_r
-   461: 0000e64c   140 FUNC    GLOBAL DEFAULT    1 _calloc_r
-   462: 00008a54    20 FUNC    GLOBAL DEFAULT    1 Serial_end
-   463: 00011208     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
-   464: 0000cc18    24 FUNC    GLOBAL DEFAULT    1 memset
+   460: 0000bc8c    60 FUNC    GLOBAL DEFAULT    1 _fflush_r
+   461: 0000e648   140 FUNC    GLOBAL DEFAULT    1 _calloc_r
+   462: 00008a50    20 FUNC    GLOBAL DEFAULT    1 Serial_end
+   463: 00011200     0 NOTYPE  GLOBAL DEFAULT  ABS __bss_start
+   464: 0000cc14    24 FUNC    GLOBAL DEFAULT    1 memset
    465: 00008230   116 FUNC    GLOBAL DEFAULT    1 main
    466: 00008354     8 FUNC    GLOBAL DEFAULT    1 _link
-   467: 00011248     4 OBJECT  GLOBAL DEFAULT    5 __malloc_max_total_mem
-   468: 0000f698    28 FUNC    GLOBAL DEFAULT    1 __swbuf
-   469: 0000f7cc     0 FUNC    GLOBAL HIDDEN     1 __aeabi_uidiv
-   470: 0000d914     8 FUNC    GLOBAL DEFAULT    1 __sclose
-   471: 0000e7f0    20 FUNC    GLOBAL DEFAULT    1 fclose
-   472: 0000a89c  4604 FUNC    GLOBAL DEFAULT    1 _dtoa_r
-   473: 0000c5e4  1508 FUNC    GLOBAL DEFAULT    1 _malloc_r
-   474: 0000f75c    44 FUNC    GLOBAL DEFAULT    1 __ascii_wctomb
-   475: 0000ff74    96 FUNC    GLOBAL HIDDEN     1 __aeabi_l2d
-   476: 0000c314   100 FUNC    GLOBAL DEFAULT    1 _fwalk
+   467: 00011240     4 OBJECT  GLOBAL DEFAULT    5 __malloc_max_total_mem
+   468: 0000f694    28 FUNC    GLOBAL DEFAULT    1 __swbuf
+   469: 0000f7c8     0 FUNC    GLOBAL HIDDEN     1 __aeabi_uidiv
+   470: 0000d910     8 FUNC    GLOBAL DEFAULT    1 __sclose
+   471: 0000e7ec    20 FUNC    GLOBAL DEFAULT    1 fclose
+   472: 0000a898  4604 FUNC    GLOBAL DEFAULT    1 _dtoa_r
+   473: 0000c5e0  1508 FUNC    GLOBAL DEFAULT    1 _malloc_r
+   474: 0000f758    44 FUNC    GLOBAL DEFAULT    1 __ascii_wctomb
+   475: 0000ff70    96 FUNC    GLOBAL HIDDEN     1 __aeabi_l2d
+   476: 0000c310   100 FUNC    GLOBAL DEFAULT    1 _fwalk
    477: 000083d8    24 FUNC    GLOBAL DEFAULT    1 _rename
-   478: 0000f9d8   544 FUNC    GLOBAL HIDDEN     1 __divsi3
-   479: 0000bfd4   248 FUNC    GLOBAL DEFAULT    1 _malloc_trim_r
-   480: 0000d91c    28 FUNC    GLOBAL DEFAULT    1 strcmp
-   481: 0000e5e0    44 FUNC    GLOBAL DEFAULT    1 vfiprintf
-   482: 000105d0     4 OBJECT  GLOBAL DEFAULT    2 heap_end
-   483: 000088c4    48 FUNC    GLOBAL DEFAULT    1 delay
-   484: 00010454   136 FUNC    GLOBAL HIDDEN     1 __nedf2
-   485: 0001120c     4 OBJECT  GLOBAL DEFAULT    5 _PathLocale
-   486: 0000e60c    64 FUNC    GLOBAL DEFAULT    1 _write_r
-   487: 0000c488    28 FUNC    GLOBAL DEFAULT    1 setlocale
-   488: 000105e8     4 OBJECT  GLOBAL DEFAULT    2 _impure_ptr
-   489: 00008b98    60 FUNC    GLOBAL DEFAULT    1 Serial_write
-   490: 0000ba98   504 FUNC    GLOBAL DEFAULT    1 __sflush_r
-   491: 0000c474     8 FUNC    GLOBAL DEFAULT    1 __locale_cjk_lang
+   478: 0000f9d4   544 FUNC    GLOBAL HIDDEN     1 __divsi3
+   479: 0000bfd0   248 FUNC    GLOBAL DEFAULT    1 _malloc_trim_r
+   480: 0000d918    28 FUNC    GLOBAL DEFAULT    1 strcmp
+   481: 0000e5dc    44 FUNC    GLOBAL DEFAULT    1 vfiprintf
+   482: 000105c8     4 OBJECT  GLOBAL DEFAULT    2 heap_end
+   483: 000088c0    48 FUNC    GLOBAL DEFAULT    1 delay
+   484: 00010450   136 FUNC    GLOBAL HIDDEN     1 __nedf2
+   485: 00011204     4 OBJECT  GLOBAL DEFAULT    5 _PathLocale
+   486: 0000e608    64 FUNC    GLOBAL DEFAULT    1 _write_r
+   487: 0000c484    28 FUNC    GLOBAL DEFAULT    1 setlocale
+   488: 000105e0     4 OBJECT  GLOBAL DEFAULT    2 _impure_ptr
+   489: 00008b94    60 FUNC    GLOBAL DEFAULT    1 Serial_write
+   490: 0000ba94   504 FUNC    GLOBAL DEFAULT    1 __sflush_r
+   491: 0000c470     8 FUNC    GLOBAL DEFAULT    1 __locale_cjk_lang
    492: 0000803c     0 NOTYPE  GLOBAL DEFAULT    1 enable_IRQ
-   493: 0000d43c    92 FUNC    GLOBAL DEFAULT    1 __ulp
-   494: 0000bfbc    24 FUNC    GLOBAL DEFAULT    1 __fp_unlock_all
+   493: 0000d438    92 FUNC    GLOBAL DEFAULT    1 __ulp
+   494: 0000bfb8    24 FUNC    GLOBAL DEFAULT    1 __fp_unlock_all
    495: 0000835c     8 FUNC    GLOBAL DEFAULT    1 _unlink
-   496: 000088f4    76 FUNC    GLOBAL DEFAULT    1 setSerialTimeout
-   497: 0000c4a4    12 FUNC    GLOBAL DEFAULT    1 localeconv
-   498: 0000f9b8    32 FUNC    GLOBAL HIDDEN     1 __aeabi_uidivmod
-   499: 0001050c    20 FUNC    GLOBAL HIDDEN     1 __aeabi_dcmpeq
+   496: 000088f0    76 FUNC    GLOBAL DEFAULT    1 setSerialTimeout
+   497: 0000c4a0    12 FUNC    GLOBAL DEFAULT    1 localeconv
+   498: 0000f9b4    32 FUNC    GLOBAL HIDDEN     1 __aeabi_uidivmod
+   499: 00010508    20 FUNC    GLOBAL HIDDEN     1 __aeabi_dcmpeq
    500: 000082b8    44 FUNC    GLOBAL DEFAULT    1 _write
    501: 000084e4    52 FUNC    GLOBAL DEFAULT    1 setPullUpDown
-   502: 0000d890    84 FUNC    GLOBAL DEFAULT    1 __swrite
-   503: 00010ea0     4 OBJECT  GLOBAL DEFAULT    2 __malloc_trim_threshold
-   504: 0000c468    12 FUNC    GLOBAL DEFAULT    1 __locale_msgcharset
-   505: 0000da04  3036 FUNC    GLOBAL DEFAULT    1 _vfiprintf_r
-   506: 0000c378   108 FUNC    GLOBAL DEFAULT    1 _fwalk_reent
-   507: 0000d334   264 FUNC    GLOBAL DEFAULT    1 __mdiff
-   508: 00010570    92 FUNC    GLOBAL HIDDEN     1 __aeabi_d2iz
+   502: 0000d88c    84 FUNC    GLOBAL DEFAULT    1 __swrite
+   503: 00010e98     4 OBJECT  GLOBAL DEFAULT    2 __malloc_trim_threshold
+   504: 0000c464    12 FUNC    GLOBAL DEFAULT    1 __locale_msgcharset
+   505: 0000da00  3036 FUNC    GLOBAL DEFAULT    1 _vfiprintf_r
+   506: 0000c374   108 FUNC    GLOBAL DEFAULT    1 _fwalk_reent
+   507: 0000d330   264 FUNC    GLOBAL DEFAULT    1 __mdiff
+   508: 0001056c    92 FUNC    GLOBAL HIDDEN     1 __aeabi_d2iz
    509: 00008300     8 FUNC    GLOBAL DEFAULT    1 _kill
-   510: 0000bf98     4 FUNC    GLOBAL DEFAULT    1 __sfp_lock_release
+   510: 0000bf94     4 FUNC    GLOBAL DEFAULT    1 __sfp_lock_release
    511: 00008368    40 FUNC    GLOBAL DEFAULT    1 _gettimeofday
    512: 000082a8     8 FUNC    GLOBAL DEFAULT    1 _read
-   513: 0000fc18     4 FUNC    WEAK   HIDDEN     1 __aeabi_idiv0
+   513: 0000fc14     4 FUNC    WEAK   HIDDEN     1 __aeabi_idiv0
    514: 000082fc     4 FUNC    GLOBAL DEFAULT    1 _exit
-   515: 0000c4b0   308 FUNC    GLOBAL DEFAULT    1 __smakebuf_r
-   516: 0000d938    28 FUNC    GLOBAL DEFAULT    1 strlen
+   515: 0000c4ac   308 FUNC    GLOBAL DEFAULT    1 __smakebuf_r
+   516: 0000d934    28 FUNC    GLOBAL DEFAULT    1 strlen
    517: 0000847c   104 FUNC    GLOBAL DEFAULT    1 init_gpio
-   518: 00008a84   136 FUNC    GLOBAL DEFAULT    1 uart0_getc
-   519: 000104f8    20 FUNC    GLOBAL HIDDEN     1 __aeabi_cdcmpeq
-   520: 00010444   152 FUNC    GLOBAL HIDDEN     1 __gedf2
-   521: 00010ea4     4 OBJECT  GLOBAL DEFAULT    2 __wctomb
-   522: 0000d954   176 FUNC    GLOBAL DEFAULT    1 __sprint_r
-   523: 0000ff20    64 FUNC    GLOBAL HIDDEN     1 __aeabi_f2d
-   524: 00011208     0 NOTYPE  GLOBAL DEFAULT  ABS __data_start
-   525: 00008b0c   140 FUNC    GLOBAL DEFAULT    1 uart0_putc
-   526: 00008844    24 FUNC    GLOBAL DEFAULT    1 init_syst
-   527: 0000f788    68 FUNC    GLOBAL DEFAULT    1 _wctomb_r
-   528: 0000fc24   688 FUNC    GLOBAL HIDDEN     1 __subdf3
-   529: 00008d44  6220 FUNC    GLOBAL DEFAULT    1 _vfprintf_r
-   530: 0000cec4   152 FUNC    GLOBAL DEFAULT    1 __lo0bits
-   531: 0000fbf8    32 FUNC    GLOBAL HIDDEN     1 __aeabi_idivmod
-   532: 0000f730    44 FUNC    GLOBAL DEFAULT    1 wcrtomb
+   518: 00008a80   136 FUNC    GLOBAL DEFAULT    1 uart0_getc
+   519: 000104f4    20 FUNC    GLOBAL HIDDEN     1 __aeabi_cdcmpeq
+   520: 00010440   152 FUNC    GLOBAL HIDDEN     1 __gedf2
+   521: 00010e9c     4 OBJECT  GLOBAL DEFAULT    2 __wctomb
+   522: 0000d950   176 FUNC    GLOBAL DEFAULT    1 __sprint_r
+   523: 0000ff1c    64 FUNC    GLOBAL HIDDEN     1 __aeabi_f2d
+   524: 00011200     0 NOTYPE  GLOBAL DEFAULT  ABS __data_start
+   525: 00008b08   140 FUNC    GLOBAL DEFAULT    1 uart0_putc
+   526: 00008840    24 FUNC    GLOBAL DEFAULT    1 init_syst
+   527: 0000f784    68 FUNC    GLOBAL DEFAULT    1 _wctomb_r
+   528: 0000fc20   688 FUNC    GLOBAL HIDDEN     1 __subdf3
+   529: 00008d40  6220 FUNC    GLOBAL DEFAULT    1 _vfprintf_r
+   530: 0000cec0   152 FUNC    GLOBAL DEFAULT    1 __lo0bits
+   531: 0000fbf4    32 FUNC    GLOBAL HIDDEN     1 __aeabi_idivmod
+   532: 0000f72c    44 FUNC    GLOBAL DEFAULT    1 wcrtomb
    533: 000083b8    32 FUNC    GLOBAL DEFAULT    1 _system
-   534: 0000a590    44 FUNC    GLOBAL DEFAULT    1 vfprintf
-   535: 000105d8     8 OBJECT  GLOBAL DEFAULT    2 read_to
-   536: 0000889c    40 FUNC    GLOBAL DEFAULT    1 delayMicroseconds
-   537: 0000e92c    72 FUNC    GLOBAL DEFAULT    1 fputwc
+   534: 0000a58c    44 FUNC    GLOBAL DEFAULT    1 vfprintf
+   535: 000105d0     8 OBJECT  GLOBAL DEFAULT    2 read_to
+   536: 00008898    40 FUNC    GLOBAL DEFAULT    1 delayMicroseconds
+   537: 0000e928    72 FUNC    GLOBAL DEFAULT    1 fputwc
    538: 000082f4     8 FUNC    GLOBAL DEFAULT    1 _close
-   539: 0000bf9c     4 FUNC    GLOBAL DEFAULT    1 __sinit_lock_acquire
-   540: 0000ccdc   184 FUNC    GLOBAL DEFAULT    1 __multadd
-   541: 0000ccc0    28 FUNC    GLOBAL DEFAULT    1 _Bfree
+   539: 0000bf98     4 FUNC    GLOBAL DEFAULT    1 __sinit_lock_acquire
+   540: 0000ccd8   184 FUNC    GLOBAL DEFAULT    1 __multadd
+   541: 0000ccbc    28 FUNC    GLOBAL DEFAULT    1 _Bfree
 
 No version information found in this file.
 Attribute Section: aeabi
