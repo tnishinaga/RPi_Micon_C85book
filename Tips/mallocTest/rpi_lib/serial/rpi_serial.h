@@ -9,5 +9,5 @@ int Serial_begin(int baudrate);
 void Serial_end(void);
 int Serial_available(void);
 
-// #define Serial_write	uart0_puts
+int Serial_write(char *buf,int len);
 #define Serial_read		uart0_getc
