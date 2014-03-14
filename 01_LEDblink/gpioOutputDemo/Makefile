@@ -30,7 +30,7 @@ rpi-micon.elf:	$(STARTUP) $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean::
-	$(RM) -f *.o *.img *.elf
+	$(RM) -f *.o *.img *.elf */*.o */*/*.o 
 	$(RM) -f tags *~
 
 tags::
