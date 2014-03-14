@@ -91,7 +91,7 @@ Symbol table '.symtab' contains 216 entries:
     28: 000080e4     0 NOTYPE  LOCAL  DEFAULT    1 $a
     29: 00008100     0 NOTYPE  LOCAL  DEFAULT    1 $d
     30: 0000947c     0 NOTYPE  LOCAL  DEFAULT    4 $d
-    31: 0000947c     4 OBJECT  LOCAL  DEFAULT    4 led.4594
+    31: 0000947c     4 OBJECT  LOCAL  DEFAULT    4 led.4597
     32: 00000000     0 FILE    LOCAL  DEFAULT  ABS syscalls.c
     33: 00008108     0 NOTYPE  LOCAL  DEFAULT    1 $a
     34: 000081a0     0 NOTYPE  LOCAL  DEFAULT    1 $d

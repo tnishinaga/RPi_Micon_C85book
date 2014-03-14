@@ -1,3 +1,6 @@
+#ifndef RPILIB_TIMER_H
+#define RPILIB_TIMER_H
+ 
 // init
 void init_syst(void);
 
@@ -24,3 +27,5 @@ void Timer_dettachInterrupt(void);
 
 // タイマー回り込み処理用関数ポインタ
 extern void (*timerIRQ_func)(void);
+
+#endif

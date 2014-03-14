@@ -1,3 +1,6 @@
+#ifndef RPILIB_PERIPHERALS_H
+#define RPILIB_PERIPHERALS_H
+ 
 #include "../rpi_type.h"
 
 #define PHY_PERI_ADDR(x) (0x20000000 + (x))
@@ -42,3 +45,5 @@
 #define SYST_C1		((vu32_t *)PHY_PERI_ADDR(SYST_BASE + 0x10))
 #define SYST_C2		((vu32_t *)PHY_PERI_ADDR(SYST_BASE + 0x14))
 #define SYST_C3		((vu32_t *)PHY_PERI_ADDR(SYST_BASE + 0x18))
+
+#endif

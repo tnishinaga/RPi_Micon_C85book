@@ -1,6 +1,6 @@
-#ifndef RPILIB_PERI_H
-#define RPILIB_PERI_H
-
+#ifndef RPILIB_PERIPHERALS_H
+#define RPILIB_PERIPHERALS_H
+ 
 #include "../rpi_type.h"
 
 #define PHY_PERI_ADDR(x) (0x20000000 + (x))

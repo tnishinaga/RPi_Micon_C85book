@@ -1,3 +1,6 @@
+#ifndef RPILIB_GPIO_H
+#define RPILIB_GPIO_H
+ 
 #define HIGH	1
 #define LOW		0
 
@@ -21,3 +24,4 @@ void setPullUpDown(int pin,int mode);
 void pinMode(int pin,int mode);
 void digitalWrite(int pin, int value);
 int digitalRead(int pin);
+#endif

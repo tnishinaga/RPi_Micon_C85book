@@ -9512,7 +9512,7 @@ Disassembly of section .rodata.str1.1:
 
 Disassembly of section .bss:
 
-00011200 <led.4591>:
+00011200 <led.4594>:
    11200:	00000000 	andeq	r0, r0, r0
 
 00011204 <_PathLocale>:

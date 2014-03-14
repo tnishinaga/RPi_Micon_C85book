@@ -1,3 +1,6 @@
+#ifndef RPILIB_PERIPHERALS_H
+#define RPILIB_PERIPHERALS_H
+ 
 #include "../rpi_type.h"
 
 #define PHY_PERI_ADDR(x) (0x20000000 + (x))
@@ -64,3 +67,5 @@
 #define UART0_ITIP		((vu32_t *)PHY_PERI_ADDR(UART0_BASE + 0x84))
 #define UART0_ITOP		((vu32_t *)PHY_PERI_ADDR(UART0_BASE + 0x88))
 #define UART0_TDR		((vu32_t *)PHY_PERI_ADDR(UART0_BASE + 0x8c))
+
+#endif

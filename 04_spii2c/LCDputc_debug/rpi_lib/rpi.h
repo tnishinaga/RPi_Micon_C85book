@@ -1,3 +1,6 @@
+#ifndef RPILIB_H
+#define RPILIB_H
+ 
 // bss
 #include "bss/rpi_bss.h"
 
@@ -15,3 +18,5 @@
 
 // serial
 #include "serial/rpi_serial.h"
+
+#endif

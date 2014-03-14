@@ -1,3 +1,6 @@
+#ifndef RPILIB_H
+#define RPILIB_H
+ 
 // bss
 #include "bss/rpi_bss.h"
 
@@ -21,3 +24,5 @@
 
 // i2c
 #include "i2c/rpi_i2c.h"
+
+#endif

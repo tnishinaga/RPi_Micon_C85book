@@ -1,3 +1,6 @@
+#ifndef RPILIB_PERIPHERALS_H
+#define RPILIB_PERIPHERALS_H
+ 
 #include "../rpi_type.h"
 
 #define PHY_PERI_ADDR(x) (0x20000000 + (x))
@@ -92,3 +95,5 @@
 #define INTERRUPT_DISABLE_IRQS2			((vu32_t *)PHY_PERI_ADDR(INTERRUPT_BASE + 0x220))
 #define INTERRUPT_DISABLE_BASIC_IRQS	((vu32_t *)PHY_PERI_ADDR(INTERRUPT_BASE + 0x224))
 
+
+#endif

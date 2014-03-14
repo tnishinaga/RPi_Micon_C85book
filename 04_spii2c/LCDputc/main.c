@@ -106,7 +106,7 @@ int main(void){
 	// slave address
 	*BSC1_A = AQM0802_ADDR >> 1;
 	// Write mode
-	*BSC1_C |= BSC_C_READ_WRITE;
+	*BSC1_C &= ~BSC_C_READ_READ;
 	// Buffer clear
 	*BSC1_C |= BSC_C_CLEAR_ALL;
 	// 送信データ長設定

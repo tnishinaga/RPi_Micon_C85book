@@ -1,3 +1,6 @@
+#ifndef RPILIB_H
+#define RPILIB_H
+ 
 // bss
 #include "bss/rpi_bss.h"
 
@@ -12,3 +15,5 @@
 
 // delay
 #include "delay/rpi_delay.h"
+
+#endif

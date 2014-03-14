@@ -5,7 +5,10 @@ srcdir=`find ./ -name "Makefile" -exec dirname {} \;`
 
 for path in ${srcdir}
 do
-	#echo ${path}
+	if [ `echo ${path} | grep 'failtureproject'` ] ; then
+		continue
+	fi
+
 	echo "start"${path}
 	pushd ${path}
 	make clean

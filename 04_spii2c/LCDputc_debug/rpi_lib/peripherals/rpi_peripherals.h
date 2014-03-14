@@ -1,3 +1,6 @@
+#ifndef RPILIB_PERIPHERALS_H
+#define RPILIB_PERIPHERALS_H
+ 
 #include "../rpi_type.h"
 
 #define PHY_PERI_ADDR(x) (0x20000000 + (x))
@@ -75,3 +78,5 @@
 #define SPI0_LTOH		((vu32_t *)PHY_PERI_ADDR(SPI0_BASE + 0x10))
 #define SPI0_DC			((vu32_t *)PHY_PERI_ADDR(SPI0_BASE + 0x14))
 
+
+#endif

@@ -1241,7 +1241,7 @@ Disassembly of section .rodata.str1.1:
 
 Disassembly of section .bss:
 
-0000947c <led.4594>:
+0000947c <led.4597>:
     947c:	00000000 	andeq	r0, r0, r0
 
 00009480 <prev_heap_end>:
