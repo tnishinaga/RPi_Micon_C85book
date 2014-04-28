@@ -38,20 +38,22 @@ int main(void){
 	*UART0_CR 	= 0x0301;
 	/****	初期設定終了	***/
 
-	// char hello[] = "HelloWorld\n";
 	char echo[256];
 	int i,c,length;
 	while(1){
 		length = 0;
-		// 文字列を受け取る(改行がくるまで読み込む)
+
+		
+        // 255文字以下で改行（LF）が来るまで読み込む
+        // （255文字以下の文字列を読み込む）
 		do{
-			// 受信FIFOが空でなくなるのを待つ
+			// 受信FIFOにデータが来るのを待つ
 			while (*UART0_FR & (1 << 4));
 			// 受信データを読み込む
 			c = *UART0_DR;
 			echo[length] = c & 0xff;
 			length++;
-		}while(c != '\n' && i < 256);
+		}while(c != '\n' && length < 256);
 
 		// 受け取った文字列を返信
 		for(i=0;i<length;i++){
