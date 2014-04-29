@@ -60,6 +60,8 @@ U-Bootを使ったネットワークブート方法の記事を追加し、以�
  * uartechoTest02のコードの修正
  * I2CキャラクタLCD説明の補足
 
+また割り込みに関するソースのディレクトリ名を「xx_interrupt」から、「05_interrupt」に変更しました。
+
 
 ### JTAGデバッガとP1コネクタの対応表が間違っていた問題
 「表 B.3 ARM-USB-TINY-H と Raspberry Pi の対応表」のピン対応表が間違っていました。
