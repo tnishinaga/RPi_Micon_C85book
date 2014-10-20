@@ -1,8 +1,8 @@
 #include "rpi_lib/rpi.h"
 
-#define GPFSEL1		0x20200004
-#define GPSET0	 	0x2020001C
-#define GPCLR0	 	0x20200028
+#define GPFSEL4  0x20200010
+#define GPSET1   0x20200020
+#define GPCLR1   0x2020002C
 
 #define SYST_CLO	0x20003004
 #define SYST_CHI	0x20003008
@@ -49,16 +49,16 @@ int main(void){
 	*(volatile unsigned int *)SYST_CHI = 0;
 	*(volatile unsigned int *)SYST_CLO = 0;
 
-	// GPIO16をOutputにセット
-	*(volatile unsigned int *)GPFSEL1 |= 0x01 << (3*6);
+	// GPIO47をOutputにセット
+	*(volatile unsigned int *)GPFSEL4 |= 0x01 << (3*7);
 
 	while(1){
-		// GPIO16をLにセット
-		*(volatile unsigned int *)GPCLR0 |= 0x01 << 16;
+		// GPIO47をLにセット
+		*(volatile unsigned int *)GPCLR1 |= 0x01 << 15;
 		// wait 500ms
 		delay_ms(500);
-		// GPIO16をHにセット
-		*(volatile unsigned int *)GPSET0 |= 0x01 << 16;
+		// GPIO47をHにセット
+		*(volatile unsigned int *)GPSET1 |= 0x01 << 15;
 		// wait 500ms
 		delay_ms(500);
 	}

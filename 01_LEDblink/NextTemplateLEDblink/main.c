@@ -3,16 +3,16 @@
 int main(void){
 	rpi_init();
 
-	// GPIO16をOutputにセット
-	pinMode(16,OUTPUT);
+	// GPIO47をOutputにセット
+	pinMode(47,OUTPUT);
 
 	while(1){
-		// GPIO16をLにセット
-		digitalWrite(16, LOW);
+		// GPIO47をLにセット
+		digitalWrite(47, LOW);
 		// wait 500ms
 		delay(500);
-		// GPIO16をHにセット
-		digitalWrite(16, HIGH);
+		// GPIO47をHにセット
+		digitalWrite(47, HIGH);
 		// wait 500ms
 		delay(500);
 	}

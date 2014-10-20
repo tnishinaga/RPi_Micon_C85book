@@ -1,9 +1,9 @@
 #include "rpi_lib/rpi.h"
 
-
 #define GPFSEL1  0x20200004
-#define GPSET0	 0x2020001C
-#define GPCLR0	 0x20200028
+#define GPFSEL4  0x20200010
+#define GPSET1   0x20200020
+#define GPCLR1   0x2020002C
 
 #define GPLEV0	0x20200034
 
@@ -14,10 +14,10 @@
 int main(void){
 	rpi_init();
 
-	// All Input
+	// GPIO10~19: Input
 	*(volatile unsigned int *)GPFSEL1 = 0;
-	// GPIO16をOutputにセット
-	*(volatile unsigned int *)GPFSEL1 |= 0x01 << (3*6);
+	// GPIO47をOutputにセット
+	*(volatile unsigned int *)GPFSEL4 = 0x01 << (3*7);
 
 	volatile unsigned int mask;
 	volatile unsigned int val;
@@ -30,10 +30,10 @@ int main(void){
 	while(1){
 		val = *(volatile unsigned int *)GPLEV0;
 		if(( val & mask) != 0){
-			*(volatile unsigned int *)GPSET0 |= 0x01 << 16;
+			*(volatile unsigned int *)GPCLR1 |= 0x01 << 15;
 		}
 		else{
-			*(volatile unsigned int *)GPCLR0 |= 0x01 << 16;
+			*(volatile unsigned int *)GPSET1 |= 0x01 << 15;
 		}
 	}
 
