@@ -33,7 +33,7 @@
 // GPIO PULLUP/DOWN
 #define GPPUD 		((vu32_t *)PHY_PERI_ADDR(GPIO_BASE + 0x94))
 #define GPPUDCLK0	((vu32_t *)PHY_PERI_ADDR(GPIO_BASE + 0x98))
-#define GPPUDCLK1	((vu32_t *)PHY_PERI_ADDR(GPIO_BASE + 0x98))
+#define GPPUDCLK1	((vu32_t *)PHY_PERI_ADDR(GPIO_BASE + 0x9C))
 
 
 // SystemTimer Peripheral
