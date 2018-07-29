@@ -1,0 +1,6 @@
+*.o
+*.size
+*.elf
+*.readelf
+*.img
+*.disas
