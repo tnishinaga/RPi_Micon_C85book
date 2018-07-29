@@ -21,26 +21,26 @@ unsigned int heap_end=(unsigned int)&__bss_end;
 unsigned int prev_heap_end;
 
 /* Forward prototypes.  */
-int     _system     _PARAMS ((const char *));
-int     _rename     _PARAMS ((const char *, const char *));
-int     isatty      _PARAMS ((int));
-clock_t _times      _PARAMS ((struct tms *));
-int     _gettimeofday   _PARAMS ((struct timeval *, struct timezone *));
-void    _raise      _PARAMS ((void));
-int     _unlink     _PARAMS ((void));
-int     _link       _PARAMS ((void));
-int     _stat       _PARAMS ((const char *, struct stat *));
-int     _fstat      _PARAMS ((int, struct stat *));
-caddr_t _sbrk       _PARAMS ((int));
-int     _getpid     _PARAMS ((int));
-int     _kill       _PARAMS ((int, int));
-void    _exit       _PARAMS ((int));
-int     _close      _PARAMS ((int));
-int     _open       _PARAMS ((const char *, int, ...));
-int     _write      _PARAMS ((int, char *, int));
-int     _lseek      _PARAMS ((int, int, int));
-int     _read       _PARAMS ((int, char *, int));
-void    initialise_monitor_handles _PARAMS ((void));
+int     _system     (const char *);
+int     _rename     (const char *, const char *);
+int     isatty      (int);
+clock_t _times      (struct tms *);
+int     _gettimeofday   (struct timeval *, struct timezone *);
+void    _raise      (void);
+int     _unlink     (void);
+int     _link       (void);
+int     _stat       (const char *, struct stat *);
+int     _fstat      (int, struct stat *);
+caddr_t _sbrk       (int);
+int     _getpid     (int);
+int     _kill       (int, int);
+void    _exit       (int);
+int     _close      (int);
+int     _open       (const char *, int, ...);
+int     _write      (int, char *, int);
+int     _lseek      (int, int, int);
+int     _read       (int, char *, int);
+void    initialise_monitor_handles (void);
 
 /* Register name faking - works in collusion with the linker.  */
 register char * stack_ptr asm ("sp");
