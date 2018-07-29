@@ -12,7 +12,7 @@ OBJS+= rpi_lib/rpi_init.o rpi_lib/bss/clearbss.o rpi_lib/gpio/gpio.o rpi_lib/tim
 OBJS+= rpi_lib/serial/serial.o
 
 # libgcc.a
-LIBS = -L/home/jitomesky/cross/rpi/arm-unknown-eabi/lib/gcc/arm-unknown-eabi/4.8.1/
+LIBS = -L$(shell $(CC) -print-libgcc-file-name)
 # newlib
 LIBS += -L/home/jitomesky/cross/rpi/arm-unknown-eabi/arm-unknown-eabi/lib
 

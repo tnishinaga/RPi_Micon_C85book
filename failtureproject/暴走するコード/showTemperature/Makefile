@@ -8,9 +8,9 @@ SIZE= $(CROSS)size
 READELF= $(CROSS)readelf
 
 # libgcc.a
-LIBS = -L/home/jitomesky/cross/rpi/arm-unknown-eabi/lib/gcc/arm-unknown-eabi/4.8.1/
+LIBS = -L$(shell $(CC) -print-libgcc-file-name)
 # newlib
-LIBS += -L/home/jitomesky/cross/rpi/arm-unknown-eabi/arm-unknown-eabi/lib/
+LIBS += $(shell $(CC) -print-search-dirs  | grep libraries | sed -e "s/libraries: =/-L/" -e "s/:/ -L/g")
 STARTUP= startup.o
 OBJS= main.o
 
