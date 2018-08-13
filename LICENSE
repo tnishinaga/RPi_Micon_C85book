@@ -1,6 +1,22 @@
+# LISENSE
+
+本サンプルコードのライセンスは以下のMITライセンスで提供されています。
+
+ただし、` syscall.c ` 及び newlib をリンクした後の生成物には、newlibのライセンスが適応されます。
+newlib ライセンスの詳細は COPYING.NEWLIB を参照してください。
+
+
+## `syscall.c` and generated binary(static linked with newlib(libc))
+
+Please refer COPYING.NEWLIB
+
+
+## Other sources
+
 The MIT License (MIT)
 
 Copyright (c) 2013 jitomesky
+Copyright (c) 2013 Toshifumi NISHINAGA(aka tnishinaga)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
